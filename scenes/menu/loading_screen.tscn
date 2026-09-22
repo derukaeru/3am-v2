@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://tetiuyj7kfoe"]
 
-[ext_resource type="Script" uid="uid://b4683ndx4cykq" path="res://scenes/menu/loading_screen.gd" id="1_4je5t"]
+[ext_resource type="Script" uid="uid://ea3yynj0gpkd" path="res://scenes/menu/loading_screen.gd" id="1_4je5t"]
 
 [sub_resource type="Animation" id="Animation_4je5t"]
 length = 0.001
@@ -47,6 +47,21 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_4je5t")
+
+[node name="loading" type="Label" parent="." unique_id=1244210711]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -25.0
+offset_top = -8.0
+offset_right = 25.0
+offset_bottom = 8.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "loading"
 
 [node name="cover" type="ColorRect" parent="." unique_id=1938715235]
 layout_mode = 1

@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://b4ggbq71lpwo4"]
 
-[ext_resource type="Texture2D" uid="uid://cehbeor7fx03k" path="res://assets/sprites/watermark/logo.png" id="1_fpraa"]
-[ext_resource type="Script" uid="uid://dqyvin4ic2ceo" path="res://scenes/menu/splash_screen.gd" id="1_rr7ju"]
+[ext_resource type="Texture2D" uid="uid://bfc0drkg7xwfb" path="res://assets/sprites/watermark/logo.png" id="1_fpraa"]
+[ext_resource type="Script" uid="uid://piplelcradst" path="res://scenes/menu/splash_screen.gd" id="1_rr7ju"]
 
 [sub_resource type="Animation" id="Animation_fpraa"]
 length = 0.001
@@ -56,7 +56,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0, 0, 0, 1)
+color = Color(0.06053035, 0.06053035, 0.060530342, 1)
 
 [node name="logo" type="TextureRect" parent="." unique_id=1282561203]
 layout_mode = 1

@@ -1,5 +1,8 @@
 [gd_scene format=3 uid="uid://dix67ojrdr6ht"]
 
+[ext_resource type="Script" uid="uid://bew4wb2odjju" path="res://scenes/menu/title_screen.gd" id="1_200k4"]
+[ext_resource type="PackedScene" uid="uid://b6iiso164bnv6" path="res://scenes/menu/settings_screen.tscn" id="1_cbih2"]
+
 [node name="title_screen" type="Control" unique_id=198211424]
 layout_mode = 3
 anchors_preset = 15
@@ -7,6 +10,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_200k4")
 
 [node name="background" type="ColorRect" parent="." unique_id=430932448]
 layout_mode = 1
@@ -27,6 +31,58 @@ grow_vertical = 2
 mouse_filter = 1
 
 [node name="start" type="Button" parent="menu" unique_id=888264336]
-layout_mode = 0
-offset_right = 8.0
-offset_bottom = 8.0
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -120.0
+offset_top = -15.5
+offset_right = 120.0
+offset_bottom = 24.5
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset_ratio = Vector2(0.5, 0.5)
+text = "start"
+
+[node name="settings" type="Button" parent="menu" unique_id=509277159]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -120.0
+offset_top = 32.0
+offset_right = 120.0
+offset_bottom = 72.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset_ratio = Vector2(0.5, 0.5)
+text = "settings"
+
+[node name="exit" type="Button" parent="menu" unique_id=806324911]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -120.0
+offset_top = 80.0
+offset_right = 120.0
+offset_bottom = 120.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset_ratio = Vector2(0.5, 0.5)
+text = "exit
+"
+
+[node name="settings_screen" parent="." unique_id=237862792 instance=ExtResource("1_cbih2")]
+visible = false
+layout_mode = 1
+
+[connection signal="pressed" from="menu/start" to="." method="start"]
+[connection signal="pressed" from="menu/settings" to="." method="settings"]
+[connection signal="pressed" from="menu/exit" to="." method="exit"]

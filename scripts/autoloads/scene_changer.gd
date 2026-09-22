@@ -1,6 +1,6 @@
 extends Node
 
-var loading_screen: PackedScene = load(Registry.UID["loading_screen"])
+var loading_screen: PackedScene = null
 var loaded_resource: PackedScene
 var scene_path: String
 var progress: Array = []
@@ -10,6 +10,7 @@ signal progress_changed(progress)
 signal loading_finished
 
 func _ready() -> void:
+	loading_screen = load(Registry.UID["loading_screen"])
 	set_process(false)
 	
 func change_scene(scene_name: String) -> void:

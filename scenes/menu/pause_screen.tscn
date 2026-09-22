@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://7jemke30bxqq"]
 
-[ext_resource type="Script" uid="uid://dcl8l8xhw4vmu" path="res://scenes/menu/pause_screen.gd" id="1_s4fn5"]
+[ext_resource type="Script" uid="uid://ck22oc07iachv" path="res://scenes/menu/pause_screen.gd" id="1_s4fn5"]
 
 [node name="pause_screen" type="Control" unique_id=2145161773]
 layout_mode = 3
@@ -18,7 +18,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0, 0, 0, 0.6392157)
+color = Color(0, 0, 0, 0.69411767)
 
 [node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=2086276069]
 layout_mode = 1
