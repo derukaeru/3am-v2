@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://dghrei2dpso50"]
 
 [ext_resource type="Script" uid="uid://da74fmuxb3146" path="res://scenes/entities/player.gd" id="1_ucweq"]
+[ext_resource type="Texture2D" uid="uid://d2bvlquop6aeo" path="res://icon.svg" id="2_08t41"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_0qees"]
 
@@ -9,3 +10,9 @@ script = ExtResource("1_ucweq")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1268845144]
 shape = SubResource("CircleShape2D_0qees")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=578259259]
+scale = Vector2(0.2, 0.195)
+texture = ExtResource("2_08t41")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1407881922]

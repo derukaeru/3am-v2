@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://dqmho8romag4p"]
+
+[node name="map" type="Node2D" unique_id=805325771]
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1865133465]
+offset_left = -59.0
+offset_top = -49.0
+offset_right = 743.0
+offset_bottom = 574.0
+color = Color(0.39435005, 0.54404753, 0.23160014, 1)
