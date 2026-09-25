@@ -1,18 +1,41 @@
 [gd_scene format=3 uid="uid://dghrei2dpso50"]
 
 [ext_resource type="Script" uid="uid://da74fmuxb3146" path="res://scenes/entities/player.gd" id="1_ucweq"]
-[ext_resource type="Texture2D" uid="uid://d2bvlquop6aeo" path="res://icon.svg" id="2_08t41"]
+[ext_resource type="Texture2D" uid="uid://bxda1bodxuko0" path="res://assets/sprites/anims/player1.png" id="2_08t41"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_0qees"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_08t41"]
+size = Vector2(14, 14)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1ie0h"]
+atlas = ExtResource("2_08t41")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_42nxq"]
+atlas = ExtResource("2_08t41")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5u6hq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1ie0h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_42nxq")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
 
 [node name="player" type="CharacterBody2D" unique_id=2009114546]
 script = ExtResource("1_ucweq")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1268845144]
-shape = SubResource("CircleShape2D_0qees")
+position = Vector2(0, -7)
+shape = SubResource("RectangleShape2D_08t41")
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=578259259]
-scale = Vector2(0.2, 0.195)
-texture = ExtResource("2_08t41")
-
-[node name="Camera2D" type="Camera2D" parent="." unique_id=1407881922]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1587159796]
+position = Vector2(0, -8)
+sprite_frames = SubResource("SpriteFrames_5u6hq")
+frame_progress = 0.51512057

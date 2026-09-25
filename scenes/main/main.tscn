@@ -8,4 +8,7 @@
 [node name="map" parent="." unique_id=805325771 instance=ExtResource("1_iuonh")]
 
 [node name="player" parent="." unique_id=2009114546 instance=ExtResource("1_hyk8p")]
-position = Vector2(312, 221)
+position = Vector2(102, 168)
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1739132954]
+position = Vector2(120, 92)

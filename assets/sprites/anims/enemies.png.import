@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bygspgtvrmck1"
-path="res://.godot/imported/enemies_blackOL.png-78ef153b1493a2412b7d8d4360021618.ctex"
+uid="uid://bhyth82ihkn6m"
+path="res://.godot/imported/enemies.png-2a5781a14cd29bf38324a7a8e52d4f9a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/anims/enemies_blackOL.png"
-dest_files=["res://.godot/imported/enemies_blackOL.png-78ef153b1493a2412b7d8d4360021618.ctex"]
+source_file="res://assets/sprites/anims/enemies.png"
+dest_files=["res://.godot/imported/enemies.png-2a5781a14cd29bf38324a7a8e52d4f9a.ctex"]
 
 [params]
 
