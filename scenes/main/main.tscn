@@ -7,4 +7,4 @@
 [node name="map" parent="." unique_id=805325771 instance=ExtResource("1_iuonh")]
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1739132954]
-position = Vector2(120, 92)
+position = Vector2(512, 324)

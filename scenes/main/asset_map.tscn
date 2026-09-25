@@ -39,12 +39,36 @@
 [ext_resource type="Texture2D" uid="uid://b0nxh7qhvmh5d" path="res://assets/sprites/objects/deadpotted2.png" id="37_4cjsk"]
 [ext_resource type="Texture2D" uid="uid://hxxlcdbueyxc" path="res://assets/sprites/objects/deadpotted3.png" id="38_cu3rd"]
 [ext_resource type="Texture2D" uid="uid://ct0x2gaekjglq" path="res://assets/sprites/objects/grave1.png" id="39_bd378"]
+[ext_resource type="Texture2D" uid="uid://cdvuc4s7m8u37" path="res://assets/sprites/objects/grave3.png" id="40_881wh"]
+[ext_resource type="Texture2D" uid="uid://vawiw3ssem5x" path="res://assets/sprites/objects/grave2.png" id="41_vr7b6"]
+[ext_resource type="Texture2D" uid="uid://ceb8s78uov1u1" path="res://assets/sprites/objects/grave4.png" id="42_msfnf"]
+[ext_resource type="Texture2D" uid="uid://dnys7ufe8cr8f" path="res://assets/sprites/objects/grave5.png" id="43_s8o4x"]
+[ext_resource type="Texture2D" uid="uid://b8llt60fnnic" path="res://assets/sprites/objects/grave6.png" id="44_savrs"]
+[ext_resource type="Texture2D" uid="uid://lnqj304d2hsy" path="res://assets/sprites/objects/grave7.png" id="45_qsr8n"]
+[ext_resource type="Texture2D" uid="uid://5f7ttf3aa2q4" path="res://assets/sprites/objects/grave8.png" id="46_v214i"]
+[ext_resource type="Texture2D" uid="uid://byba1f37q02xa" path="res://assets/sprites/objects/grave9.png" id="47_61k77"]
+[ext_resource type="Texture2D" uid="uid://b1bhyehv4umby" path="res://assets/sprites/objects/mausoleum.png" id="48_f3130"]
+[ext_resource type="Texture2D" uid="uid://ifir1hcbo5oi" path="res://assets/sprites/objects/metalarch.png" id="49_ewno5"]
+[ext_resource type="Texture2D" uid="uid://ca7047oftn4qn" path="res://assets/sprites/objects/metalfence2.png" id="50_r5v1w"]
+[ext_resource type="Texture2D" uid="uid://mxydudsxmu03" path="res://assets/sprites/objects/metalfence3.png" id="51_jl04v"]
+[ext_resource type="Texture2D" uid="uid://cqyr6x6iw8mc2" path="res://assets/sprites/objects/metalfence4.png" id="52_70ldo"]
+[ext_resource type="Texture2D" uid="uid://dprugx5i20htn" path="res://assets/sprites/objects/metalfence5.png" id="53_xghv1"]
+[ext_resource type="Texture2D" uid="uid://b1temed025dbl" path="res://assets/sprites/objects/metalfence.png" id="54_4ic3t"]
+[ext_resource type="Texture2D" uid="uid://c7spa637vln6m" path="res://assets/sprites/objects/metalgateleft.png" id="55_2sltp"]
+[ext_resource type="Texture2D" uid="uid://cxgws8hqpec7i" path="res://assets/sprites/objects/metalgateright.png" id="56_itnty"]
+[ext_resource type="Texture2D" uid="uid://b4pp8kbq3ujrw" path="res://assets/sprites/objects/pole.png" id="57_irima"]
+[ext_resource type="Texture2D" uid="uid://b4k2pqwqajjo5" path="res://assets/sprites/objects/rose_potted.png" id="58_yf1f1"]
+[ext_resource type="Texture2D" uid="uid://bjbqdiuviopkg" path="res://assets/sprites/objects/statue_base.png" id="59_kiajj"]
+[ext_resource type="Texture2D" uid="uid://dvpvmxascytg2" path="res://assets/sprites/objects/statue_dog.png" id="60_77al4"]
+[ext_resource type="Texture2D" uid="uid://b7u3fqtrbw1sm" path="res://assets/sprites/objects/statue_full.png" id="61_ra7fd"]
 
 [node name="asset_map" type="Node2D" unique_id=588131548]
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1445539611]
-offset_right = 1561.0
-offset_bottom = 1128.0
+offset_left = 5.0
+offset_top = -10.0
+offset_right = 2254.0
+offset_bottom = 1189.0
 color = Color(0.5936, 0.8, 0.512, 1)
 
 [node name="Bat1" type="Sprite2D" parent="." unique_id=2007595836]
@@ -69,7 +93,7 @@ scale = Vector2(0.7830189, 0.7)
 texture = ExtResource("5_j77di")
 
 [node name="Deadstick" type="Sprite2D" parent="." unique_id=1586345446]
-position = Vector2(119, 507)
+position = Vector2(170, 484)
 texture = ExtResource("6_7ywbt")
 
 [node name="DirtpatchSm" type="Sprite2D" parent="." unique_id=1972317418]
@@ -101,7 +125,7 @@ position = Vector2(319, 327)
 texture = ExtResource("13_5khlx")
 
 [node name="Gravedirt" type="Sprite2D" parent="." unique_id=1748470087]
-position = Vector2(520, 126)
+position = Vector2(479, 97)
 texture = ExtResource("14_31lnd")
 
 [node name="Gravehole" type="Sprite2D" parent="." unique_id=976955953]
@@ -129,7 +153,7 @@ position = Vector2(790, 596)
 texture = ExtResource("20_savrs")
 
 [node name="Pumpkin4" type="Sprite2D" parent="." unique_id=359834739]
-position = Vector2(688, 597)
+position = Vector2(686, 599)
 texture = ExtResource("21_qsr8n")
 
 [node name="Pumpkin5" type="Sprite2D" parent="." unique_id=1586226903]
@@ -153,7 +177,7 @@ position = Vector2(537, 451)
 texture = ExtResource("26_r5v1w")
 
 [node name="StatueCoverd" type="Sprite2D" parent="." unique_id=87323405]
-position = Vector2(77, 146)
+position = Vector2(77, 155)
 texture = ExtResource("27_jl04v")
 
 [node name="VinesLg1" type="Sprite2D" parent="." unique_id=1810148507]
@@ -174,7 +198,7 @@ position = Vector2(664, 990)
 texture = ExtResource("31_2sltp")
 
 [node name="Batbox" type="Sprite2D" parent="." unique_id=174173103]
-position = Vector2(822, 903)
+position = Vector2(813, 927)
 texture = ExtResource("32_64r5e")
 
 [node name="Bouquet" type="Sprite2D" parent="." unique_id=479222780]
@@ -182,11 +206,11 @@ position = Vector2(991, 1022)
 texture = ExtResource("33_swirx")
 
 [node name="Brickcolumn" type="Sprite2D" parent="." unique_id=1200491010]
-position = Vector2(1141, 972)
+position = Vector2(1164, 964)
 texture = ExtResource("34_2o6no")
 
 [node name="BrickcolumnBroken" type="Sprite2D" parent="." unique_id=48206631]
-position = Vector2(1239, 961)
+position = Vector2(1295, 969)
 texture = ExtResource("35_cknv6")
 
 [node name="Deadpotted1" type="Sprite2D" parent="." unique_id=1824927381]
@@ -204,3 +228,91 @@ texture = ExtResource("38_cu3rd")
 [node name="Grave1" type="Sprite2D" parent="." unique_id=754180730]
 position = Vector2(993, 753)
 texture = ExtResource("39_bd378")
+
+[node name="Grave3" type="Sprite2D" parent="." unique_id=1891356951]
+position = Vector2(1185, 763)
+texture = ExtResource("40_881wh")
+
+[node name="Grave2" type="Sprite2D" parent="." unique_id=1440866269]
+position = Vector2(1097, 774)
+texture = ExtResource("41_vr7b6")
+
+[node name="Grave4" type="Sprite2D" parent="." unique_id=675469770]
+position = Vector2(1281, 743)
+texture = ExtResource("42_msfnf")
+
+[node name="Grave5" type="Sprite2D" parent="." unique_id=1486453890]
+position = Vector2(1431, 724)
+texture = ExtResource("43_s8o4x")
+
+[node name="Grave6" type="Sprite2D" parent="." unique_id=1471419892]
+position = Vector2(1139, 633)
+texture = ExtResource("44_savrs")
+
+[node name="Grave7" type="Sprite2D" parent="." unique_id=1222733138]
+position = Vector2(1284, 623)
+texture = ExtResource("45_qsr8n")
+
+[node name="Grave8" type="Sprite2D" parent="." unique_id=904306274]
+position = Vector2(1470, 550)
+texture = ExtResource("46_v214i")
+
+[node name="Grave9" type="Sprite2D" parent="." unique_id=1209476384]
+position = Vector2(1337, 507)
+texture = ExtResource("47_61k77")
+
+[node name="Mausoleum" type="Sprite2D" parent="." unique_id=1189673513]
+position = Vector2(1991, 616)
+texture = ExtResource("48_f3130")
+
+[node name="Metalarch" type="Sprite2D" parent="." unique_id=65397647]
+position = Vector2(1254, 290)
+texture = ExtResource("49_ewno5")
+
+[node name="Metalfence2" type="Sprite2D" parent="." unique_id=1746421779]
+position = Vector2(1903, 149)
+texture = ExtResource("50_r5v1w")
+
+[node name="Metalfence3" type="Sprite2D" parent="." unique_id=1910068028]
+position = Vector2(1720, 244)
+texture = ExtResource("51_jl04v")
+
+[node name="Metalfence4" type="Sprite2D" parent="." unique_id=1695287633]
+position = Vector2(2070, 222)
+texture = ExtResource("52_70ldo")
+
+[node name="Metalfence5" type="Sprite2D" parent="." unique_id=2046397836]
+position = Vector2(1545, 355)
+texture = ExtResource("53_xghv1")
+
+[node name="Metalfence" type="Sprite2D" parent="." unique_id=202483633]
+position = Vector2(1873, 319)
+texture = ExtResource("54_4ic3t")
+
+[node name="Metalgateleft" type="Sprite2D" parent="." unique_id=1794692512]
+position = Vector2(1484, 190)
+texture = ExtResource("55_2sltp")
+
+[node name="Metalgateright" type="Sprite2D" parent="." unique_id=1043124088]
+position = Vector2(1632, 114)
+texture = ExtResource("56_itnty")
+
+[node name="Pole" type="Sprite2D" parent="." unique_id=599311278]
+position = Vector2(1744, 85)
+texture = ExtResource("57_irima")
+
+[node name="RosePotted" type="Sprite2D" parent="." unique_id=69044716]
+position = Vector2(1427, 1011)
+texture = ExtResource("58_yf1f1")
+
+[node name="StatueBase" type="Sprite2D" parent="." unique_id=875030521]
+position = Vector2(1827, 913)
+texture = ExtResource("59_kiajj")
+
+[node name="StatueDog" type="Sprite2D" parent="." unique_id=994133537]
+position = Vector2(1840, 746)
+texture = ExtResource("60_77al4")
+
+[node name="StatueFull" type="Sprite2D" parent="." unique_id=317352176]
+position = Vector2(1634, 958)
+texture = ExtResource("61_ra7fd")
