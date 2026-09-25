@@ -1,0 +1,206 @@
+[gd_scene format=3 uid="uid://h3pgsqiph51e"]
+
+[ext_resource type="Texture2D" uid="uid://b041yge0lg0jy" path="res://assets/sprites/nature/bat1.png" id="1_bd378"]
+[ext_resource type="Texture2D" uid="uid://cmv20nftcalmp" path="res://assets/sprites/nature/bat2.png" id="2_7mmje"]
+[ext_resource type="Texture2D" uid="uid://hf6j6y4j4plf" path="res://assets/sprites/nature/deadbush.png" id="3_3r15m"]
+[ext_resource type="Texture2D" uid="uid://dexxohvat5ggp" path="res://assets/sprites/nature/deadflower.png" id="4_5bt2d"]
+[ext_resource type="Texture2D" uid="uid://1r8mtsopohp6" path="res://assets/sprites/nature/deadspookytree.png" id="5_j77di"]
+[ext_resource type="Texture2D" uid="uid://b1d05ofkaq3ih" path="res://assets/sprites/nature/deadstick.png" id="6_7ywbt"]
+[ext_resource type="Texture2D" uid="uid://b3a1ladxatdrl" path="res://assets/sprites/nature/dirtpatch_sm.png" id="7_7n7sk"]
+[ext_resource type="Texture2D" uid="uid://b1saouyk3a54v" path="res://assets/sprites/nature/dirtpatch_sq.png" id="8_meg01"]
+[ext_resource type="Texture2D" uid="uid://1dfiew6i76ip" path="res://assets/sprites/nature/ghost1.png" id="9_1rbgs"]
+[ext_resource type="Texture2D" uid="uid://c0dloedwcts57" path="res://assets/sprites/nature/ghost2.png" id="10_2nt8k"]
+[ext_resource type="Texture2D" uid="uid://ciut6wq2rsnbg" path="res://assets/sprites/nature/ghost3.png" id="11_d7tuf"]
+[ext_resource type="Texture2D" uid="uid://bi2bydw6vjd8f" path="res://assets/sprites/nature/ghost4.png" id="12_ax63h"]
+[ext_resource type="Texture2D" uid="uid://bcvpskb4jbuj6" path="res://assets/sprites/nature/ghost5.png" id="13_5khlx"]
+[ext_resource type="Texture2D" uid="uid://b46ikuxxyo0sw" path="res://assets/sprites/nature/gravedirt.png" id="14_31lnd"]
+[ext_resource type="Texture2D" uid="uid://bviu5ir6fnv6j" path="res://assets/sprites/nature/gravehole.png" id="15_u5qav"]
+[ext_resource type="Texture2D" uid="uid://c541suqc5m5ba" path="res://assets/sprites/nature/puddle1.png" id="16_881wh"]
+[ext_resource type="Texture2D" uid="uid://prsp0q46aasp" path="res://assets/sprites/nature/puddle2.png" id="17_vr7b6"]
+[ext_resource type="Texture2D" uid="uid://hgthl8q1hk7y" path="res://assets/sprites/nature/pumpkin1.png" id="18_msfnf"]
+[ext_resource type="Texture2D" uid="uid://4y0nomxq3ftu" path="res://assets/sprites/nature/pumpkin2.png" id="19_s8o4x"]
+[ext_resource type="Texture2D" uid="uid://db8gmy66t1mr1" path="res://assets/sprites/nature/pumpkin3.png" id="20_savrs"]
+[ext_resource type="Texture2D" uid="uid://bdqelveager4y" path="res://assets/sprites/nature/pumpkin4.png" id="21_qsr8n"]
+[ext_resource type="Texture2D" uid="uid://bnvovfrl7o88b" path="res://assets/sprites/nature/pumpkin5.png" id="22_v214i"]
+[ext_resource type="Texture2D" uid="uid://bqtbar50tmq07" path="res://assets/sprites/nature/pumpkin6.png" id="23_61k77"]
+[ext_resource type="Texture2D" uid="uid://nd0m74r7pe2f" path="res://assets/sprites/nature/pumpkin_busted.png" id="24_f3130"]
+[ext_resource type="Texture2D" uid="uid://6q7e8xwa2pc4" path="res://assets/sprites/nature/pumpkin_jack.png" id="25_ewno5"]
+[ext_resource type="Texture2D" uid="uid://dkbjel6gjayr4" path="res://assets/sprites/nature/skull.png" id="26_r5v1w"]
+[ext_resource type="Texture2D" uid="uid://cjg1rdqebv8k4" path="res://assets/sprites/nature/statue_coverd.png" id="27_jl04v"]
+[ext_resource type="Texture2D" uid="uid://cf6hd684exs67" path="res://assets/sprites/nature/vines_lg1.png" id="28_70ldo"]
+[ext_resource type="Texture2D" uid="uid://nenrxxiannw" path="res://assets/sprites/nature/vines_lg2.png" id="29_xghv1"]
+[ext_resource type="Texture2D" uid="uid://cb67mglwq5h7h" path="res://assets/sprites/nature/vines_sm1.png" id="30_4ic3t"]
+[ext_resource type="Texture2D" uid="uid://uxjhcjopxl4y" path="res://assets/sprites/nature/vines_sm2.png" id="31_2sltp"]
+[ext_resource type="Texture2D" uid="uid://biuiyule4on32" path="res://assets/sprites/objects/batbox.png" id="32_64r5e"]
+[ext_resource type="Texture2D" uid="uid://bwrpwj7b4jy1x" path="res://assets/sprites/objects/bouquet.png" id="33_swirx"]
+[ext_resource type="Texture2D" uid="uid://1rukhpeon44i" path="res://assets/sprites/objects/brickcolumn.png" id="34_2o6no"]
+[ext_resource type="Texture2D" uid="uid://bri542tpxkds2" path="res://assets/sprites/objects/brickcolumn_broken.png" id="35_cknv6"]
+[ext_resource type="Texture2D" uid="uid://dn846ghq4ryby" path="res://assets/sprites/objects/deadpotted1.png" id="36_0kwtm"]
+[ext_resource type="Texture2D" uid="uid://b0nxh7qhvmh5d" path="res://assets/sprites/objects/deadpotted2.png" id="37_4cjsk"]
+[ext_resource type="Texture2D" uid="uid://hxxlcdbueyxc" path="res://assets/sprites/objects/deadpotted3.png" id="38_cu3rd"]
+[ext_resource type="Texture2D" uid="uid://ct0x2gaekjglq" path="res://assets/sprites/objects/grave1.png" id="39_bd378"]
+
+[node name="asset_map" type="Node2D" unique_id=588131548]
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1445539611]
+offset_right = 1561.0
+offset_bottom = 1128.0
+color = Color(0.5936, 0.8, 0.512, 1)
+
+[node name="Bat1" type="Sprite2D" parent="." unique_id=2007595836]
+position = Vector2(184, 245)
+texture = ExtResource("1_bd378")
+
+[node name="Bat2" type="Sprite2D" parent="." unique_id=2100183310]
+position = Vector2(145, 336)
+texture = ExtResource("2_7mmje")
+
+[node name="Deadbush" type="Sprite2D" parent="." unique_id=1358708172]
+position = Vector2(279, 451)
+texture = ExtResource("3_3r15m")
+
+[node name="Deadflower" type="Sprite2D" parent="." unique_id=1089167838]
+position = Vector2(422, 466)
+texture = ExtResource("4_5bt2d")
+
+[node name="Deadspookytree" type="Sprite2D" parent="." unique_id=1713977912]
+position = Vector2(808, 302.99997)
+scale = Vector2(0.7830189, 0.7)
+texture = ExtResource("5_j77di")
+
+[node name="Deadstick" type="Sprite2D" parent="." unique_id=1586345446]
+position = Vector2(119, 507)
+texture = ExtResource("6_7ywbt")
+
+[node name="DirtpatchSm" type="Sprite2D" parent="." unique_id=1972317418]
+position = Vector2(309, 577)
+texture = ExtResource("7_7n7sk")
+
+[node name="DirtpatchSq" type="Sprite2D" parent="." unique_id=53049668]
+position = Vector2(546, 565)
+texture = ExtResource("8_meg01")
+
+[node name="Ghost1" type="Sprite2D" parent="." unique_id=1233875763]
+position = Vector2(666, 335)
+texture = ExtResource("9_1rbgs")
+
+[node name="Ghost2" type="Sprite2D" parent="." unique_id=802529648]
+position = Vector2(555, 335)
+texture = ExtResource("10_2nt8k")
+
+[node name="Ghost3" type="Sprite2D" parent="." unique_id=1612941483]
+position = Vector2(466, 335)
+texture = ExtResource("11_d7tuf")
+
+[node name="Ghost4" type="Sprite2D" parent="." unique_id=1229190623]
+position = Vector2(383, 342)
+texture = ExtResource("12_ax63h")
+
+[node name="Ghost5" type="Sprite2D" parent="." unique_id=1283697374]
+position = Vector2(319, 327)
+texture = ExtResource("13_5khlx")
+
+[node name="Gravedirt" type="Sprite2D" parent="." unique_id=1748470087]
+position = Vector2(520, 126)
+texture = ExtResource("14_31lnd")
+
+[node name="Gravehole" type="Sprite2D" parent="." unique_id=976955953]
+position = Vector2(333, 185)
+texture = ExtResource("15_u5qav")
+
+[node name="Puddle1" type="Sprite2D" parent="." unique_id=1339488330]
+position = Vector2(85, 417)
+texture = ExtResource("16_881wh")
+
+[node name="Puddle2" type="Sprite2D" parent="." unique_id=1649064432]
+position = Vector2(186, 589)
+texture = ExtResource("17_vr7b6")
+
+[node name="Pumpkin1" type="Sprite2D" parent="." unique_id=1672694008]
+position = Vector2(978, 597)
+texture = ExtResource("18_msfnf")
+
+[node name="Pumpkin2" type="Sprite2D" parent="." unique_id=1910531616]
+position = Vector2(895, 598)
+texture = ExtResource("19_s8o4x")
+
+[node name="Pumpkin3" type="Sprite2D" parent="." unique_id=1825098536]
+position = Vector2(790, 596)
+texture = ExtResource("20_savrs")
+
+[node name="Pumpkin4" type="Sprite2D" parent="." unique_id=359834739]
+position = Vector2(688, 597)
+texture = ExtResource("21_qsr8n")
+
+[node name="Pumpkin5" type="Sprite2D" parent="." unique_id=1586226903]
+position = Vector2(968, 509)
+texture = ExtResource("22_v214i")
+
+[node name="Pumpkin6" type="Sprite2D" parent="." unique_id=1130424429]
+position = Vector2(835, 514)
+texture = ExtResource("23_61k77")
+
+[node name="PumpkinBusted" type="Sprite2D" parent="." unique_id=386108524]
+position = Vector2(734, 500)
+texture = ExtResource("24_f3130")
+
+[node name="PumpkinJack" type="Sprite2D" parent="." unique_id=2096503795]
+position = Vector2(625, 463)
+texture = ExtResource("25_ewno5")
+
+[node name="Skull" type="Sprite2D" parent="." unique_id=671780041]
+position = Vector2(537, 451)
+texture = ExtResource("26_r5v1w")
+
+[node name="StatueCoverd" type="Sprite2D" parent="." unique_id=87323405]
+position = Vector2(77, 146)
+texture = ExtResource("27_jl04v")
+
+[node name="VinesLg1" type="Sprite2D" parent="." unique_id=1810148507]
+position = Vector2(135, 859)
+scale = Vector2(0.68359375, 0.69140625)
+texture = ExtResource("28_70ldo")
+
+[node name="VinesLg2" type="Sprite2D" parent="." unique_id=1214779415]
+position = Vector2(343, 852)
+texture = ExtResource("29_xghv1")
+
+[node name="VinesSm1" type="Sprite2D" parent="." unique_id=1920921314]
+position = Vector2(531, 948)
+texture = ExtResource("30_4ic3t")
+
+[node name="VinesSm2" type="Sprite2D" parent="." unique_id=1666389308]
+position = Vector2(664, 990)
+texture = ExtResource("31_2sltp")
+
+[node name="Batbox" type="Sprite2D" parent="." unique_id=174173103]
+position = Vector2(822, 903)
+texture = ExtResource("32_64r5e")
+
+[node name="Bouquet" type="Sprite2D" parent="." unique_id=479222780]
+position = Vector2(991, 1022)
+texture = ExtResource("33_swirx")
+
+[node name="Brickcolumn" type="Sprite2D" parent="." unique_id=1200491010]
+position = Vector2(1141, 972)
+texture = ExtResource("34_2o6no")
+
+[node name="BrickcolumnBroken" type="Sprite2D" parent="." unique_id=48206631]
+position = Vector2(1239, 961)
+texture = ExtResource("35_cknv6")
+
+[node name="Deadpotted1" type="Sprite2D" parent="." unique_id=1824927381]
+position = Vector2(916, 930)
+texture = ExtResource("36_0kwtm")
+
+[node name="Deadpotted2" type="Sprite2D" parent="." unique_id=65072146]
+position = Vector2(988, 930)
+texture = ExtResource("37_4cjsk")
+
+[node name="Deadpotted3" type="Sprite2D" parent="." unique_id=354423776]
+position = Vector2(1051, 926)
+texture = ExtResource("38_cu3rd")
+
+[node name="Grave1" type="Sprite2D" parent="." unique_id=754180730]
+position = Vector2(993, 753)
+texture = ExtResource("39_bd378")
