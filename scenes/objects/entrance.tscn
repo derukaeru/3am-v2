@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://d4hkns38h66rr"]
+
+[ext_resource type="Texture2D" uid="uid://ifir1hcbo5oi" path="res://assets/sprites/objects/metalarch.png" id="1_70bpv"]
+
+[node name="entrance" type="Sprite2D" unique_id=2053842019]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_70bpv")

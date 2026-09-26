@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://gadh58duwjmr"]
+
+[ext_resource type="Texture2D" uid="uid://1rukhpeon44i" path="res://assets/sprites/objects/brickcolumn.png" id="1_sbj11"]
+
+[node name="pillar" type="Sprite2D" unique_id=482940113]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_sbj11")

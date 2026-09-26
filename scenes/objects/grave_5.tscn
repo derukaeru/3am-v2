@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://cbvgyghhq6glq"]
+
+[ext_resource type="Script" uid="uid://c8k0h4nw5u5ap" path="res://scripts/components/draggable_component.gd" id="1_mnroi"]
+[ext_resource type="Texture2D" uid="uid://dnys7ufe8cr8f" path="res://assets/sprites/objects/grave5.png" id="2_yl1r8"]
+
+[node name="grave_5" type="Area2D" unique_id=656037030]
+script = ExtResource("1_mnroi")
+metadata/_custom_type_script = "uid://c8k0h4nw5u5ap"
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=234395710]
+polygon = PackedVector2Array(-46, -31, 1, -6, 46, -33, 42, -46, 21, -57, 12, -116, 0, -126, -14, -115, -19, -59, -39, -47)
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=541377870]
+position = Vector2(-1, -64)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_yl1r8")

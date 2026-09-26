@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://3n8fssadrrr5"]
+
+[ext_resource type="Script" uid="uid://c8k0h4nw5u5ap" path="res://scripts/components/draggable_component.gd" id="1_4nhkm"]
+[ext_resource type="Texture2D" uid="uid://biuiyule4on32" path="res://assets/sprites/objects/batbox.png" id="2_qexc1"]
+
+[node name="bat_box" type="Area2D" unique_id=1846462244]
+script = ExtResource("1_4nhkm")
+metadata/_custom_type_script = "uid://c8k0h4nw5u5ap"
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=408988708]
+polygon = PackedVector2Array(-24, -30, 16, -21, 15, -207, 34, -216, 35, -360, -13, -396, -41, -343, -29, -332, -31, -219, -19, -209)
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1835276868]
+position = Vector2(0, -200)
+texture = ExtResource("2_qexc1")

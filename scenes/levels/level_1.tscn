@@ -1,0 +1,102 @@
+[gd_scene format=3 uid="uid://el2o1hyahrha"]
+
+[ext_resource type="Texture2D" uid="uid://chu6rlqxltni1" path="res://assets/sprites/GrassBG.png" id="1_ksju7"]
+[ext_resource type="PackedScene" uid="uid://gadh58duwjmr" path="res://scenes/objects/pillar.tscn" id="2_x42e6"]
+[ext_resource type="PackedScene" uid="uid://r8wn6glcym0w" path="res://scenes/objects/fence_1.tscn" id="3_6761a"]
+[ext_resource type="PackedScene" uid="uid://d4hkns38h66rr" path="res://scenes/objects/entrance.tscn" id="4_sk5k4"]
+
+[node name="level_1" type="Node2D" unique_id=451199170]
+
+[node name="background" type="TextureRect" parent="." unique_id=1520871745]
+offset_left = -126.0
+offset_top = -97.0
+offset_right = 3012.0
+offset_bottom = 2071.0
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_ksju7")
+expand_mode = 1
+stretch_mode = 1
+
+[node name="movable_objects" type="Node2D" parent="." unique_id=1843577571]
+position = Vector2(58, 65)
+
+[node name="pillar3" parent="movable_objects" unique_id=482940113 instance=ExtResource("2_x42e6")]
+position = Vector2(643, 106)
+
+[node name="fence_8" parent="movable_objects" unique_id=38674026 instance=ExtResource("3_6761a")]
+position = Vector2(910, 286)
+rotation = -3.1415925
+scale = Vector2(0.5, -0.5)
+
+[node name="fence_9" parent="movable_objects" unique_id=1234100041 instance=ExtResource("3_6761a")]
+position = Vector2(837, 244)
+rotation = -3.1415925
+scale = Vector2(0.5, -0.5)
+
+[node name="fence_10" parent="movable_objects" unique_id=990606403 instance=ExtResource("3_6761a")]
+position = Vector2(764, 202)
+rotation = -3.1415925
+scale = Vector2(0.5, -0.5)
+
+[node name="fence_12" parent="movable_objects" unique_id=972659099 instance=ExtResource("3_6761a")]
+position = Vector2(692, 160)
+rotation = -3.1415925
+scale = Vector2(0.5, -0.5)
+
+[node name="pillar4" parent="movable_objects" unique_id=1791214478 instance=ExtResource("2_x42e6")]
+position = Vector2(962, 288)
+
+[node name="fence_13" parent="movable_objects" unique_id=396122713 instance=ExtResource("3_6761a")]
+position = Vector2(302, 321)
+
+[node name="fence_14" parent="movable_objects" unique_id=1376921711 instance=ExtResource("3_6761a")]
+position = Vector2(229, 364)
+
+[node name="fence_15" parent="movable_objects" unique_id=906565347 instance=ExtResource("3_6761a")]
+position = Vector2(448, 235)
+
+[node name="fence_16" parent="movable_objects" unique_id=1579391819 instance=ExtResource("3_6761a")]
+position = Vector2(375, 278)
+
+[node name="fence_17" parent="movable_objects" unique_id=1658485550 instance=ExtResource("3_6761a")]
+position = Vector2(594, 149)
+
+[node name="fence_18" parent="movable_objects" unique_id=370570487 instance=ExtResource("3_6761a")]
+position = Vector2(521, 192)
+
+[node name="fence_6" parent="movable_objects" unique_id=5728875 instance=ExtResource("3_6761a")]
+position = Vector2(912, 343)
+
+[node name="fence_7" parent="movable_objects" unique_id=1025257100 instance=ExtResource("3_6761a")]
+position = Vector2(839, 386)
+
+[node name="entrance" parent="movable_objects" unique_id=2053842019 instance=ExtResource("4_sk5k4")]
+position = Vector2(737, 414)
+
+[node name="fence_1" parent="movable_objects" unique_id=1836558404 instance=ExtResource("3_6761a")]
+position = Vector2(629, 509)
+
+[node name="fence_2" parent="movable_objects" unique_id=459015683 instance=ExtResource("3_6761a")]
+position = Vector2(556, 552)
+
+[node name="pillar2" parent="movable_objects" unique_id=1750977890 instance=ExtResource("2_x42e6")]
+position = Vector2(184, 378)
+
+[node name="fence_3" parent="movable_objects" unique_id=1847813709 instance=ExtResource("3_6761a")]
+position = Vector2(451, 558)
+scale = Vector2(-0.5, 0.5)
+
+[node name="fence_4" parent="movable_objects" unique_id=2126128838 instance=ExtResource("3_6761a")]
+position = Vector2(378, 516)
+scale = Vector2(-0.5, 0.5)
+
+[node name="fence_5" parent="movable_objects" unique_id=889488789 instance=ExtResource("3_6761a")]
+position = Vector2(305, 474)
+scale = Vector2(-0.5, 0.5)
+
+[node name="fence_11" parent="movable_objects" unique_id=1451365921 instance=ExtResource("3_6761a")]
+position = Vector2(233, 432)
+scale = Vector2(-0.5, 0.5)
+
+[node name="pillar" parent="movable_objects" unique_id=384986345 instance=ExtResource("2_x42e6")]
+position = Vector2(503, 560)

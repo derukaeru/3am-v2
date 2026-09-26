@@ -1,10 +1,31 @@
 [gd_scene format=3 uid="uid://dqmho8romag4p"]
 
+[ext_resource type="Texture2D" uid="uid://chu6rlqxltni1" path="res://assets/sprites/GrassBG.png" id="1_6do1y"]
+[ext_resource type="PackedScene" uid="uid://caswyi77qfjfn" path="res://scenes/objects/pumpkin.tscn" id="2_nbn0q"]
+[ext_resource type="PackedScene" uid="uid://dv4i6qkabitg4" path="res://scenes/objects/grave.tscn" id="3_qs0vq"]
+[ext_resource type="PackedScene" uid="uid://dt3e4louba76k" path="res://scenes/objects/dead_tree.tscn" id="4_dvu8d"]
+[ext_resource type="PackedScene" uid="uid://dpq1sutw013eb" path="res://scenes/objects/large_vine.tscn" id="5_r0htm"]
+
 [node name="map" type="Node2D" unique_id=805325771]
 
-[node name="ColorRect" type="ColorRect" parent="." unique_id=196402947]
-offset_left = -91.0
-offset_top = -49.0
-offset_right = 955.0
-offset_bottom = 711.0
-color = Color(0.47055998, 0.68, 0.3808, 1)
+[node name="grass" type="TextureRect" parent="." unique_id=1934385741]
+offset_left = -71.0
+offset_top = -72.0
+offset_right = 2821.0
+offset_bottom = 1908.0
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_6do1y")
+expand_mode = 1
+stretch_mode = 1
+
+[node name="pumpkin" parent="." unique_id=1222323557 instance=ExtResource("2_nbn0q")]
+position = Vector2(298, 193)
+
+[node name="grave" parent="." unique_id=2085510907 instance=ExtResource("3_qs0vq")]
+position = Vector2(469, 258)
+
+[node name="dead_tree" parent="." unique_id=662324910 instance=ExtResource("4_dvu8d")]
+position = Vector2(684, 201)
+
+[node name="large_vine" parent="." unique_id=1316743030 instance=ExtResource("5_r0htm")]
+position = Vector2(177, 495)

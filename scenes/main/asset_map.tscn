@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://h3pgsqiph51e"]
 
 [ext_resource type="Texture2D" uid="uid://b041yge0lg0jy" path="res://assets/sprites/nature/bat1.png" id="1_bd378"]
+[ext_resource type="Texture2D" uid="uid://chu6rlqxltni1" path="res://assets/sprites/GrassBG.png" id="1_i5nsj"]
 [ext_resource type="Texture2D" uid="uid://cmv20nftcalmp" path="res://assets/sprites/nature/bat2.png" id="2_7mmje"]
 [ext_resource type="Texture2D" uid="uid://hf6j6y4j4plf" path="res://assets/sprites/nature/deadbush.png" id="3_3r15m"]
 [ext_resource type="Texture2D" uid="uid://dexxohvat5ggp" path="res://assets/sprites/nature/deadflower.png" id="4_5bt2d"]
@@ -172,12 +173,12 @@ animations = [{
 
 [node name="asset_map" type="Node2D" unique_id=588131548]
 
-[node name="ColorRect" type="ColorRect" parent="." unique_id=1445539611]
-offset_left = 5.0
-offset_top = -10.0
-offset_right = 2314.0
-offset_bottom = 904.0
-color = Color(0.5936, 0.8, 0.512, 1)
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1418634208]
+offset_right = 2374.0
+offset_bottom = 931.0
+texture = ExtResource("1_i5nsj")
+expand_mode = 1
+stretch_mode = 1
 
 [node name="Bat1" type="Sprite2D" parent="." unique_id=2007595836]
 position = Vector2(191, 88)
@@ -429,16 +430,16 @@ texture = ExtResource("61_ra7fd")
 position = Vector2(188, 806)
 sprite_frames = SubResource("SpriteFrames_yesv4")
 autoplay = "default"
-frame_progress = 0.08414188
+frame_progress = 0.58424765
 
 [node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="." unique_id=1799290096]
 position = Vector2(347, 816)
 sprite_frames = SubResource("SpriteFrames_sv3eu")
 autoplay = "default"
-frame_progress = 0.028068215
+frame_progress = 0.5279664
 
 [node name="AnimatedSprite2D3" type="AnimatedSprite2D" parent="." unique_id=163548187]
 position = Vector2(516, 837)
 sprite_frames = SubResource("SpriteFrames_ruofv")
 autoplay = "default"
-frame_progress = 0.28648224
+frame_progress = 0.78757846

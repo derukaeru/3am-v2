@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://7aeoc7n5j2mb"]
+
+[ext_resource type="Script" uid="uid://c8k0h4nw5u5ap" path="res://scripts/components/draggable_component.gd" id="1_3ft16"]
+[ext_resource type="Texture2D" uid="uid://b46ikuxxyo0sw" path="res://assets/sprites/nature/gravedirt.png" id="2_3ft16"]
+
+[node name="gravedirt" type="Area2D" unique_id=1955297785]
+script = ExtResource("1_3ft16")
+metadata/_custom_type_script = "uid://c8k0h4nw5u5ap"
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=901277996]
+polygon = PackedVector2Array(-66, -48, 17, -1, 62, -25, -18, -74)
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1374513497]
+position = Vector2(0, -38)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_3ft16")

@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://cfndntvf87s3x"]
+
+[ext_resource type="Script" uid="uid://c8k0h4nw5u5ap" path="res://scripts/components/draggable_component.gd" id="1_isrow"]
+[ext_resource type="Texture2D" uid="uid://bwrpwj7b4jy1x" path="res://assets/sprites/objects/bouquet.png" id="2_g03fa"]
+
+[node name="boquet" type="Area2D" unique_id=1387670597]
+script = ExtResource("1_isrow")
+metadata/_custom_type_script = "uid://c8k0h4nw5u5ap"
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=1282351476]
+polygon = PackedVector2Array(-45, -47, 17, -8, 44, -19, 46, -37, 42, -69, -30, -53, -33, -59)
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=345280579]
+position = Vector2(0, -37)
+texture = ExtResource("2_g03fa")
