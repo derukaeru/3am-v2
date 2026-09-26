@@ -9,4 +9,5 @@ var UID: Dictionary = {
 	"main": "uid://ba5bm31arpyp2",
 	
 	"gravedirt": "uid://b46ikuxxyo0sw",
+	"ghost": "uid://bbn15mdbixdgm",
 }

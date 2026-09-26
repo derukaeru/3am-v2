@@ -1,0 +1,108 @@
+[gd_scene format=3 uid="uid://bbn15mdbixdgm"]
+
+[ext_resource type="Texture2D" uid="uid://i0j0rl266qnt" path="res://assets/sprites/animations/ghost1/PNG_0001.png" id="1_m5b76"]
+[ext_resource type="Texture2D" uid="uid://ssrqim2k0ghm" path="res://assets/sprites/animations/ghost1/PNG_0002.png" id="2_afyef"]
+[ext_resource type="Texture2D" uid="uid://cqmgsahf8yyo2" path="res://assets/sprites/animations/ghost1/PNG_0003.png" id="3_1iwry"]
+[ext_resource type="Texture2D" uid="uid://bkoeicc6ofav6" path="res://assets/sprites/animations/ghost1/PNG_0004.png" id="4_042mi"]
+[ext_resource type="Texture2D" uid="uid://lwwm4q1eyasf" path="res://assets/sprites/animations/ghost1/PNG_0005.png" id="5_2676r"]
+[ext_resource type="Texture2D" uid="uid://cnto4i4e76w8v" path="res://assets/sprites/animations/ghost1/PNG_0006.png" id="6_osmkc"]
+[ext_resource type="Texture2D" uid="uid://dlyy851b51jec" path="res://assets/sprites/animations/ghost1/PNG_0007.png" id="7_5k2ih"]
+[ext_resource type="Texture2D" uid="uid://d2qkjy04lpbdq" path="res://assets/sprites/animations/ghost1/PNG_0008.png" id="8_lnioi"]
+[ext_resource type="Texture2D" uid="uid://bajoh4mwljkwo" path="res://assets/sprites/animations/ghost1/PNG_0009.png" id="9_uexs0"]
+[ext_resource type="Texture2D" uid="uid://b6vt4xmkt6lnc" path="res://assets/sprites/animations/ghost4/PNG_0001.png" id="10_dajal"]
+[ext_resource type="Texture2D" uid="uid://7lunpp25saqy" path="res://assets/sprites/animations/ghost4/PNG_0002.png" id="11_d1g6x"]
+[ext_resource type="Texture2D" uid="uid://b7nfu74ipxph1" path="res://assets/sprites/animations/ghost4/PNG_0003.png" id="12_cwsf0"]
+[ext_resource type="Texture2D" uid="uid://cctx7i11vrx4n" path="res://assets/sprites/animations/ghost4/PNG_0004.png" id="13_amr4i"]
+[ext_resource type="Texture2D" uid="uid://bh25gu1ag02b0" path="res://assets/sprites/animations/ghost4/PNG_0005.png" id="14_47cdw"]
+[ext_resource type="Texture2D" uid="uid://cdkoodp7y1ei1" path="res://assets/sprites/animations/ghost4/PNG_0006.png" id="15_kasmw"]
+[ext_resource type="Texture2D" uid="uid://cah5m8uq0jx3x" path="res://assets/sprites/animations/ghost4/PNG_0007.png" id="16_lfa5s"]
+[ext_resource type="Texture2D" uid="uid://bkg7x7s2radij" path="res://assets/sprites/animations/ghost4/PNG_0008.png" id="17_h7t0e"]
+[ext_resource type="Texture2D" uid="uid://dwk7igvmqpc3b" path="res://assets/sprites/animations/ghost4/PNG_0009.png" id="18_ntydl"]
+[ext_resource type="Script" uid="uid://bebhtgese0ri7" path="res://scenes/objects/ghost.gd" id="19_afyef"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_xvlwf"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_m5b76")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_afyef")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_1iwry")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_042mi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_2676r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_osmkc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_5k2ih")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_lnioi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_uexs0")
+}],
+"loop": true,
+"name": &"ghost_1",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_dajal")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_d1g6x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_cwsf0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_amr4i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_47cdw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_kasmw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_lfa5s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_h7t0e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_ntydl")
+}],
+"loop": true,
+"name": &"ghost_2",
+"speed": 5.0
+}]
+
+[sub_resource type="Animation" id="Animation_afyef"]
+resource_name = "rise"
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_1iwry"]
+_data = {
+&"rise": SubResource("Animation_afyef")
+}
+
+[node name="ghost" type="AnimatedSprite2D" unique_id=1782963852]
+scale = Vector2(0.5, 0.5)
+sprite_frames = SubResource("SpriteFrames_xvlwf")
+animation = &"ghost_2"
+autoplay = "ghost_2"
+frame_progress = 0.76687586
+script = ExtResource("19_afyef")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1360754625]
+libraries/ = SubResource("AnimationLibrary_1iwry")
+autoplay = &"rise"

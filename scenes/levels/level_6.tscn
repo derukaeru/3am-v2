@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://bc0rr6ns1sdft"]
+
+[ext_resource type="Texture2D" uid="uid://chu6rlqxltni1" path="res://assets/sprites/GrassBG.png" id="1_gfuhv"]
+
+[node name="level_6" type="Node2D" unique_id=1534398508]
+
+[node name="background" type="TextureRect" parent="." unique_id=2086994140]
+offset_left = -126.0
+offset_top = -97.0
+offset_right = 3012.0
+offset_bottom = 2071.0
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_gfuhv")
+expand_mode = 1
+stretch_mode = 1
+
+[node name="design" type="Node2D" parent="." unique_id=345404842]
+
+[node name="movable_objects" type="Node2D" parent="." unique_id=574949647]
+
+[node name="lights" type="Node2D" parent="." unique_id=1930544699]

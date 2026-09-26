@@ -8,12 +8,19 @@
 [ext_resource type="PackedScene" uid="uid://caswyi77qfjfn" path="res://scenes/objects/pumpkin.tscn" id="5_6761a"]
 [ext_resource type="PackedScene" uid="uid://ty0yvocumcqh" path="res://scenes/objects/statue_base.tscn" id="7_iav0o"]
 [ext_resource type="PackedScene" uid="uid://dt3e4louba76k" path="res://scenes/objects/dead_tree.tscn" id="8_dnkej"]
+[ext_resource type="Texture2D" uid="uid://hf6j6y4j4plf" path="res://assets/sprites/nature/deadbush.png" id="8_np2pn"]
 [ext_resource type="PackedScene" uid="uid://lrp5fg8t4qxi" path="res://scenes/objects/dirtpatch_small.tscn" id="9_mm8aj"]
+[ext_resource type="Texture2D" uid="uid://4y0nomxq3ftu" path="res://assets/sprites/nature/pumpkin2.png" id="9_v6ha0"]
+[ext_resource type="Texture2D" uid="uid://bdqelveager4y" path="res://assets/sprites/nature/pumpkin4.png" id="10_gmpev"]
 [ext_resource type="Texture2D" uid="uid://dyj0c421hwn0o" path="res://assets/sprites/misc/light_texture.png" id="10_iav0o"]
 [ext_resource type="PackedScene" uid="uid://cbre1ad6iwdja" path="res://scenes/objects/statue_dog.tscn" id="10_wtwp4"]
 [ext_resource type="PackedScene" uid="uid://bkxuf7hk8x426" path="res://scenes/objects/statue_full.tscn" id="11_iwr0g"]
+[ext_resource type="Texture2D" uid="uid://nd0m74r7pe2f" path="res://assets/sprites/nature/pumpkin_busted.png" id="11_mkypq"]
+[ext_resource type="Texture2D" uid="uid://bd547kc0kkdqq" path="res://assets/sprites/nature/SunknRock1.png" id="12_mkypq"]
 [ext_resource type="PackedScene" uid="uid://cfndntvf87s3x" path="res://scenes/objects/boquet.tscn" id="12_mm8aj"]
 [ext_resource type="PackedScene" uid="uid://ds4v3foycg1ug" path="res://scenes/entities/firefly.tscn" id="13_dnkej"]
+[ext_resource type="Texture2D" uid="uid://uxjhcjopxl4y" path="res://assets/sprites/nature/vines_sm2.png" id="13_ndtll"]
+[ext_resource type="Texture2D" uid="uid://bjkfyra6yf16m" path="res://assets/sprites/nature/Flower1.png" id="21_7h2jl"]
 
 [node name="level_1" type="Node2D" unique_id=451199170]
 
@@ -27,118 +34,176 @@ texture = ExtResource("1_ksju7")
 expand_mode = 1
 stretch_mode = 1
 
+[node name="design" type="Node2D" parent="." unique_id=386970227]
+
+[node name="gravehole" parent="design" unique_id=1753305487 instance=ExtResource("2_excbq")]
+position = Vector2(574.5, 459.5)
+
+[node name="gravehole2" parent="design" unique_id=1155300290 instance=ExtResource("2_excbq")]
+position = Vector2(714.5, 368.5)
+
+[node name="pillar3" parent="design" unique_id=482940113 instance=ExtResource("2_x42e6")]
+position = Vector2(660.5, 137.5)
+
+[node name="fence_8" parent="design" unique_id=38674026 instance=ExtResource("3_6761a")]
+position = Vector2(1001.5, 359.5)
+flip_h = true
+
+[node name="fence_9" parent="design" unique_id=1381464200 instance=ExtResource("3_6761a")]
+position = Vector2(928.5, 317.5)
+flip_h = true
+
+[node name="fence_10" parent="design" unique_id=1897331442 instance=ExtResource("3_6761a")]
+position = Vector2(855.5, 275.5)
+flip_h = true
+
+[node name="fence_12" parent="design" unique_id=1066446497 instance=ExtResource("3_6761a")]
+position = Vector2(783.5, 233.5)
+flip_h = true
+
+[node name="pillar4" parent="design" unique_id=284320441 instance=ExtResource("2_x42e6")]
+position = Vector2(1053.5, 361.5)
+
+[node name="fence_13" parent="design" unique_id=536253494 instance=ExtResource("3_6761a")]
+position = Vector2(319.5, 352.5)
+
+[node name="fence_14" parent="design" unique_id=365799606 instance=ExtResource("3_6761a")]
+position = Vector2(246.5, 395.5)
+
+[node name="fence_15" parent="design" unique_id=601540225 instance=ExtResource("3_6761a")]
+position = Vector2(465.5, 266.5)
+
+[node name="fence_16" parent="design" unique_id=2027970080 instance=ExtResource("3_6761a")]
+position = Vector2(392.5, 309.5)
+
+[node name="fence_17" parent="design" unique_id=829019651 instance=ExtResource("3_6761a")]
+position = Vector2(611.5, 180.5)
+
+[node name="fence_18" parent="design" unique_id=492392811 instance=ExtResource("3_6761a")]
+position = Vector2(538.5, 223.5)
+
+[node name="fence_6" parent="design" unique_id=1764404528 instance=ExtResource("3_6761a")]
+position = Vector2(1003.5, 416.5)
+
+[node name="fence_7" parent="design" unique_id=1834008694 instance=ExtResource("3_6761a")]
+position = Vector2(930.5, 459.5)
+
+[node name="entrance" parent="design" unique_id=2053842019 instance=ExtResource("4_sk5k4")]
+position = Vector2(828.5, 487.5)
+
+[node name="fence_1" parent="design" unique_id=452236751 instance=ExtResource("3_6761a")]
+position = Vector2(720.5, 582.5)
+
+[node name="fence_2" parent="design" unique_id=1402218575 instance=ExtResource("3_6761a")]
+position = Vector2(647.5, 625.5)
+
+[node name="pillar2" parent="design" unique_id=1304587504 instance=ExtResource("2_x42e6")]
+position = Vector2(201.5, 409.5)
+
+[node name="fence_3" parent="design" unique_id=716009266 instance=ExtResource("3_6761a")]
+position = Vector2(542.5, 631.5)
+flip_h = true
+
+[node name="fence_4" parent="design" unique_id=1489704248 instance=ExtResource("3_6761a")]
+position = Vector2(469.5, 589.5)
+flip_h = true
+
+[node name="fence_5" parent="design" unique_id=765967473 instance=ExtResource("3_6761a")]
+position = Vector2(396.5, 547.5)
+flip_h = true
+
+[node name="fence_11" parent="design" unique_id=1130165803 instance=ExtResource("3_6761a")]
+position = Vector2(324.5, 505.5)
+flip_h = true
+
+[node name="fence_19" parent="design" unique_id=225823012 instance=ExtResource("3_6761a")]
+position = Vector2(251.5, 463.5)
+flip_h = true
+
+[node name="fence_20" parent="design" unique_id=1526580998 instance=ExtResource("3_6761a")]
+position = Vector2(711.5, 191.5)
+flip_h = true
+
+[node name="pillar" parent="design" unique_id=642784092 instance=ExtResource("2_x42e6")]
+position = Vector2(594.5, 633.5)
+
+[node name="dead_tree" parent="design" unique_id=1121609886 instance=ExtResource("8_dnkej")]
+position = Vector2(1096.5, 656.5)
+
+[node name="dead_tree2" parent="design" unique_id=127198101 instance=ExtResource("8_dnkej")]
+position = Vector2(982.5, 38.5)
+
+[node name="dead_tree3" parent="design" unique_id=1186080234 instance=ExtResource("8_dnkej")]
+position = Vector2(129.5, 255.5)
+flip_h = true
+
+[node name="dirtpatch_small" parent="design" unique_id=1748520992 instance=ExtResource("9_mm8aj")]
+position = Vector2(333.5, 428.5)
+
+[node name="dirtpatch_small2" parent="design" unique_id=592107776 instance=ExtResource("9_mm8aj")]
+position = Vector2(791.5, 307.5)
+
+[node name="Deadbush" type="Sprite2D" parent="design" unique_id=1350911320]
+position = Vector2(714, 756)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("8_np2pn")
+
+[node name="Deadbush2" type="Sprite2D" parent="design" unique_id=1365070001]
+position = Vector2(407, 687.5)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("8_np2pn")
+
+[node name="Deadbush3" type="Sprite2D" parent="design" unique_id=57799695]
+position = Vector2(357, 118)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("8_np2pn")
+
+[node name="Pumpkin2" type="Sprite2D" parent="design" unique_id=2096577503]
+position = Vector2(438, 473)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("9_v6ha0")
+
+[node name="Pumpkin4" type="Sprite2D" parent="design" unique_id=1784978175]
+position = Vector2(1184, 457)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("10_gmpev")
+
+[node name="Pumpkin5" type="Sprite2D" parent="design" unique_id=309228725]
+position = Vector2(96, 482)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("10_gmpev")
+
+[node name="PumpkinBusted" type="Sprite2D" parent="design" unique_id=1416080294]
+position = Vector2(788, 62)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("11_mkypq")
+
+[node name="PumpkinBusted2" type="Sprite2D" parent="design" unique_id=2142005697]
+position = Vector2(586, 811)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("11_mkypq")
+
+[node name="SunknRock1" type="Sprite2D" parent="design" unique_id=1934855404]
+position = Vector2(1200, 146)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("12_mkypq")
+
+[node name="VinesSm2" type="Sprite2D" parent="design" unique_id=1529702598]
+position = Vector2(4, 585)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("13_ndtll")
+
+[node name="VinesSm3" type="Sprite2D" parent="design" unique_id=81950082]
+position = Vector2(989, 804)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("13_ndtll")
+flip_h = true
+
 [node name="movable_objects" type="Node2D" parent="." unique_id=1843577571]
 position = Vector2(105, 74)
 
-[node name="gravehole" parent="movable_objects" unique_id=1036409817 instance=ExtResource("2_excbq")]
-position = Vector2(483, 386)
-
-[node name="gravehole2" parent="movable_objects" unique_id=744101295 instance=ExtResource("2_excbq")]
-position = Vector2(623, 295)
-
-[node name="pillar3" parent="movable_objects" unique_id=482940113 instance=ExtResource("2_x42e6")]
-position = Vector2(569, 64)
-
-[node name="fence_8" parent="movable_objects" unique_id=38674026 instance=ExtResource("3_6761a")]
-position = Vector2(910, 286)
-flip_h = true
-
-[node name="fence_9" parent="movable_objects" unique_id=1234100041 instance=ExtResource("3_6761a")]
-position = Vector2(837, 244)
-flip_h = true
-
-[node name="fence_10" parent="movable_objects" unique_id=990606403 instance=ExtResource("3_6761a")]
-position = Vector2(764, 202)
-flip_h = true
-
-[node name="fence_12" parent="movable_objects" unique_id=972659099 instance=ExtResource("3_6761a")]
-position = Vector2(692, 160)
-flip_h = true
-
-[node name="pillar4" parent="movable_objects" unique_id=1791214478 instance=ExtResource("2_x42e6")]
-position = Vector2(962, 288)
-
-[node name="fence_13" parent="movable_objects" unique_id=396122713 instance=ExtResource("3_6761a")]
-position = Vector2(228, 279)
-
-[node name="fence_14" parent="movable_objects" unique_id=1376921711 instance=ExtResource("3_6761a")]
-position = Vector2(155, 322)
-
-[node name="fence_15" parent="movable_objects" unique_id=906565347 instance=ExtResource("3_6761a")]
-position = Vector2(374, 193)
-
-[node name="fence_16" parent="movable_objects" unique_id=1579391819 instance=ExtResource("3_6761a")]
-position = Vector2(301, 236)
-
-[node name="fence_17" parent="movable_objects" unique_id=1658485550 instance=ExtResource("3_6761a")]
-position = Vector2(520, 107)
-
-[node name="fence_18" parent="movable_objects" unique_id=370570487 instance=ExtResource("3_6761a")]
-position = Vector2(447, 150)
-
-[node name="fence_6" parent="movable_objects" unique_id=5728875 instance=ExtResource("3_6761a")]
-position = Vector2(912, 343)
-
-[node name="fence_7" parent="movable_objects" unique_id=1025257100 instance=ExtResource("3_6761a")]
-position = Vector2(839, 386)
-
-[node name="entrance" parent="movable_objects" unique_id=2053842019 instance=ExtResource("4_sk5k4")]
-position = Vector2(737, 414)
-
-[node name="fence_1" parent="movable_objects" unique_id=1836558404 instance=ExtResource("3_6761a")]
-position = Vector2(629, 509)
-
-[node name="fence_2" parent="movable_objects" unique_id=459015683 instance=ExtResource("3_6761a")]
-position = Vector2(556, 552)
-
-[node name="pillar2" parent="movable_objects" unique_id=1750977890 instance=ExtResource("2_x42e6")]
-position = Vector2(110, 336)
-
-[node name="fence_3" parent="movable_objects" unique_id=1847813709 instance=ExtResource("3_6761a")]
-position = Vector2(451, 558)
-flip_h = true
-
-[node name="fence_4" parent="movable_objects" unique_id=2126128838 instance=ExtResource("3_6761a")]
-position = Vector2(378, 516)
-flip_h = true
-
-[node name="fence_5" parent="movable_objects" unique_id=889488789 instance=ExtResource("3_6761a")]
-position = Vector2(305, 474)
-flip_h = true
-
-[node name="fence_11" parent="movable_objects" unique_id=1451365921 instance=ExtResource("3_6761a")]
-position = Vector2(233, 432)
-flip_h = true
-
-[node name="fence_19" parent="movable_objects" unique_id=1246341278 instance=ExtResource("3_6761a")]
-position = Vector2(160, 390)
-flip_h = true
-
-[node name="fence_20" parent="movable_objects" unique_id=1248658943 instance=ExtResource("3_6761a")]
-position = Vector2(620, 118)
-flip_h = true
-
-[node name="pillar" parent="movable_objects" unique_id=384986345 instance=ExtResource("2_x42e6")]
-position = Vector2(503, 560)
-
 [node name="statue_base" parent="movable_objects" unique_id=382195033 instance=ExtResource("7_iav0o")]
 position = Vector2(527, 273)
-
-[node name="dead_tree" parent="movable_objects" unique_id=662324910 instance=ExtResource("8_dnkej")]
-position = Vector2(1005, 583)
-
-[node name="dead_tree2" parent="movable_objects" unique_id=1082877323 instance=ExtResource("8_dnkej")]
-position = Vector2(891, -35)
-
-[node name="dead_tree3" parent="movable_objects" unique_id=1121609886 instance=ExtResource("8_dnkej")]
-position = Vector2(38, 182)
-flip_h = true
-
-[node name="dirtpatch_small" parent="movable_objects" unique_id=1748520992 instance=ExtResource("9_mm8aj")]
-position = Vector2(242, 355)
-
-[node name="dirtpatch_small2" parent="movable_objects" unique_id=196939031 instance=ExtResource("9_mm8aj")]
-position = Vector2(700, 234)
 
 [node name="statue_dog" parent="movable_objects" unique_id=958997829 instance=ExtResource("10_wtwp4")]
 position = Vector2(127, 692)
@@ -156,7 +221,6 @@ position = Vector2(21, 769)
 position = Vector2(-44, 725)
 
 [node name="lights" type="Node2D" parent="." unique_id=681304105]
-visible = false
 
 [node name="firefly" parent="lights" unique_id=1158227695 instance=ExtResource("13_dnkej")]
 position = Vector2(934, 789)
@@ -181,6 +245,17 @@ texture = ExtResource("10_iav0o")
 texture_scale = 3.9
 
 [node name="PointLight2D2" type="PointLight2D" parent="lights" unique_id=2095558970]
-position = Vector2(165, 731)
+position = Vector2(116, 732)
 texture = ExtResource("10_iav0o")
 texture_scale = 1.9
+
+[node name="Flower1" type="Sprite2D" parent="." unique_id=428896920]
+position = Vector2(295, 21)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("21_7h2jl")
+
+[node name="Flower2" type="Sprite2D" parent="." unique_id=172218476]
+position = Vector2(1020, 247)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("21_7h2jl")
+flip_h = true
