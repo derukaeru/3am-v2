@@ -12,6 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://dyj0c421hwn0o" path="res://assets/sprites/misc/light_texture.png" id="10_iav0o"]
 [ext_resource type="PackedScene" uid="uid://cbre1ad6iwdja" path="res://scenes/objects/statue_dog.tscn" id="10_wtwp4"]
 [ext_resource type="PackedScene" uid="uid://bkxuf7hk8x426" path="res://scenes/objects/statue_full.tscn" id="11_iwr0g"]
+[ext_resource type="PackedScene" uid="uid://cfndntvf87s3x" path="res://scenes/objects/boquet.tscn" id="12_mm8aj"]
 [ext_resource type="PackedScene" uid="uid://ds4v3foycg1ug" path="res://scenes/entities/firefly.tscn" id="13_dnkej"]
 
 [node name="level_1" type="Node2D" unique_id=451199170]
@@ -142,19 +143,8 @@ position = Vector2(700, 234)
 [node name="statue_dog" parent="movable_objects" unique_id=958997829 instance=ExtResource("10_wtwp4")]
 position = Vector2(127, 692)
 
-[node name="PointLight2D2" type="PointLight2D" parent="movable_objects/statue_dog" unique_id=1853196747]
-position = Vector2(10, -73)
-texture = ExtResource("10_iav0o")
-texture_scale = 0.8
-
 [node name="statue_full" parent="movable_objects" unique_id=71883435 instance=ExtResource("11_iwr0g")]
 position = Vector2(18, 690)
-
-[node name="PointLight2D" type="PointLight2D" parent="movable_objects/statue_full" unique_id=1683522583]
-position = Vector2(2, -145)
-shadow_enabled = true
-texture = ExtResource("10_iav0o")
-texture_scale = 0.8
 
 [node name="pumpkin" parent="movable_objects" unique_id=1222323557 instance=ExtResource("5_6761a")]
 position = Vector2(80, 747)
@@ -162,17 +152,35 @@ position = Vector2(80, 747)
 [node name="pumpkin2" parent="movable_objects" unique_id=1923723474 instance=ExtResource("5_6761a")]
 position = Vector2(21, 769)
 
-[node name="firefly" parent="." unique_id=1158227695 instance=ExtResource("13_dnkej")]
-position = Vector2(866, 533)
+[node name="boquet" parent="movable_objects" unique_id=1387670597 instance=ExtResource("12_mm8aj")]
+position = Vector2(-44, 725)
 
-[node name="firefly2" parent="." unique_id=1928431413 instance=ExtResource("13_dnkej")]
-position = Vector2(167, 252)
+[node name="lights" type="Node2D" parent="." unique_id=681304105]
+visible = false
 
-[node name="firefly3" parent="." unique_id=1461465336 instance=ExtResource("13_dnkej")]
-position = Vector2(662, 136)
+[node name="firefly" parent="lights" unique_id=1158227695 instance=ExtResource("13_dnkej")]
+position = Vector2(934, 789)
 
-[node name="firefly4" parent="." unique_id=769010968 instance=ExtResource("13_dnkej")]
+[node name="firefly2" parent="lights" unique_id=1808767489 instance=ExtResource("13_dnkej")]
+position = Vector2(93, 86)
+
+[node name="firefly3" parent="lights" unique_id=1868418738 instance=ExtResource("13_dnkej")]
+position = Vector2(544, 64)
+
+[node name="firefly4" parent="lights" unique_id=502930767 instance=ExtResource("13_dnkej")]
 position = Vector2(1046, 276)
 
-[node name="firefly5" parent="." unique_id=382185342 instance=ExtResource("13_dnkej")]
-position = Vector2(514, 497)
+[node name="firefly5" parent="lights" unique_id=726460184 instance=ExtResource("13_dnkej")]
+position = Vector2(535, 842)
+
+[node name="PointLight2D" type="PointLight2D" parent="lights" unique_id=18368091]
+position = Vector2(597, 442)
+energy = 0.6
+shadow_enabled = true
+texture = ExtResource("10_iav0o")
+texture_scale = 3.9
+
+[node name="PointLight2D2" type="PointLight2D" parent="lights" unique_id=2095558970]
+position = Vector2(165, 731)
+texture = ExtResource("10_iav0o")
+texture_scale = 1.9

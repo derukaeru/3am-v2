@@ -35,6 +35,10 @@ window/stretch/mode="viewport"
 
 enabled=PackedStringArray("res://addons/godot_super-wakatime/plugin.cfg")
 
+[global_group]
+
+gravehole=""
+
 [gui]
 
 theme/custom_font="uid://boilr86nnpfpm"

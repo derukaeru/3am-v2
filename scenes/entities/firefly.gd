@@ -11,7 +11,7 @@ func _ready() -> void:
 	freq += randf_range(-0.2, 0.2)
 
 func _process(_delta: float) -> void:
-	var t := Time.get_ticks_msec() / 1000.0
-	var s := sin(t * freq * TAU)
-	var flicker := noise.get_noise_1d(t * 2.0)
+	var t: float = Time.get_ticks_msec() / 1000.0
+	var s: float = sin(t * freq * TAU)
+	var flicker: float = noise.get_noise_1d(t * 2.0)
 	point_light.texture_scale = remap(s, -1.0, 1.0, min_scale, max_scale) + flicker * 0.1

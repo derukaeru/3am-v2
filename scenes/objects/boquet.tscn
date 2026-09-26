@@ -8,8 +8,9 @@ script = ExtResource("1_isrow")
 metadata/_custom_type_script = "uid://c8k0h4nw5u5ap"
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=1282351476]
-polygon = PackedVector2Array(-45, -47, 17, -8, 44, -19, 46, -37, 42, -69, -30, -53, -33, -59)
+polygon = PackedVector2Array(-23, -28, 8, -10, 22, -16, 23, -25, 22, -42, -14, -32, -19, -37)
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=345280579]
-position = Vector2(0, -37)
+position = Vector2(0, -25)
+scale = Vector2(0.5, 0.5)
 texture = ExtResource("2_g03fa")

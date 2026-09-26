@@ -1,0 +1,60 @@
+[gd_scene format=3 uid="uid://bdwwmuep6qohb"]
+
+[ext_resource type="Script" uid="uid://jk5noje5w6m7" path="res://scenes/menu/level_select_screen.gd" id="1_xknif"]
+[ext_resource type="Texture2D" uid="uid://chu6rlqxltni1" path="res://assets/sprites/GrassBG.png" id="2_wjj45"]
+[ext_resource type="PackedScene" uid="uid://dt3e4louba76k" path="res://scenes/objects/dead_tree.tscn" id="3_gw1ff"]
+[ext_resource type="Texture2D" uid="uid://dyj0c421hwn0o" path="res://assets/sprites/misc/light_texture.png" id="4_hfcij"]
+
+[node name="level_select_screen" type="Control" unique_id=1964962743]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_xknif")
+
+[node name="background" type="TextureRect" parent="." unique_id=1866502553]
+modulate = Color(0.9297146, 0.9297147, 0.9297146, 1)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -29.0
+offset_top = -27.0
+offset_right = 1349.0
+offset_bottom = 917.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_wjj45")
+expand_mode = 1
+stretch_mode = 1
+
+[node name="objects" type="Node2D" parent="." unique_id=577367423]
+
+[node name="dead_tree" parent="objects" unique_id=1121609886 instance=ExtResource("3_gw1ff")]
+position = Vector2(1103, 646)
+
+[node name="dead_tree2" parent="objects" unique_id=442866594 instance=ExtResource("3_gw1ff")]
+position = Vector2(58, 121)
+flip_h = true
+
+[node name="dead_tree5" parent="objects" unique_id=807038501 instance=ExtResource("3_gw1ff")]
+position = Vector2(564, 865)
+flip_h = true
+
+[node name="dead_tree3" parent="objects" unique_id=2147351430 instance=ExtResource("3_gw1ff")]
+position = Vector2(169, 578)
+
+[node name="dead_tree4" parent="objects" unique_id=1074636011 instance=ExtResource("3_gw1ff")]
+position = Vector2(983, 205)
+
+[node name="CanvasModulate" type="CanvasModulate" parent="." unique_id=589677532]
+color = Color(0.17470476, 0.18929103, 0.29099804, 1)
+
+[node name="PointLight2D" type="PointLight2D" parent="." unique_id=593628092]
+position = Vector2(652, 420)
+energy = 0.45
+texture = ExtResource("4_hfcij")
+texture_scale = 4.35

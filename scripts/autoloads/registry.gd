@@ -7,4 +7,6 @@ var UID: Dictionary = {
 	"pause_screen": "uid://7jemke30bxqq",
 	
 	"main": "uid://ba5bm31arpyp2",
+	
+	"gravedirt": "uid://b46ikuxxyo0sw",
 }

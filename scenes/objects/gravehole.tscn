@@ -1,7 +1,9 @@
 [gd_scene format=3 uid="uid://dtmasu1fri2h5"]
 
+[ext_resource type="Script" uid="uid://r7dred8gwikx" path="res://scenes/objects/gravehole.gd" id="2_fholy"]
 [ext_resource type="Texture2D" uid="uid://bviu5ir6fnv6j" path="res://assets/sprites/nature/gravehole.png" id="2_v1c5x"]
 
-[node name="gravehole" type="Sprite2D" unique_id=1753305487]
+[node name="gravehole" type="Sprite2D" unique_id=1753305487 groups=["gravehole"]]
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("2_v1c5x")
+script = ExtResource("2_fholy")
