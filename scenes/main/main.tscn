@@ -12,4 +12,4 @@
 color = Color(0.15049115, 0.16073108, 0.2524957, 1)
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1739132954]
-position = Vector2(578, 387)
+position = Vector2(640, 428)

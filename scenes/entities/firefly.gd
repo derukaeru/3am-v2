@@ -2,7 +2,7 @@ class_name Firefly extends Node2D
 
 @onready var point_light: PointLight2D = $PointLight2D
 @export var freq: float = 0.4
-@export var min_scale: float = 0.3
+@export var min_scale: float = 0.6
 @export var max_scale: float = 0.8
 var noise := FastNoiseLite.new()
 

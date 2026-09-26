@@ -40,23 +40,19 @@ position = Vector2(569, 64)
 
 [node name="fence_8" parent="movable_objects" unique_id=38674026 instance=ExtResource("3_6761a")]
 position = Vector2(910, 286)
-rotation = -3.1415925
-scale = Vector2(0.5, -0.5)
+flip_h = true
 
 [node name="fence_9" parent="movable_objects" unique_id=1234100041 instance=ExtResource("3_6761a")]
 position = Vector2(837, 244)
-rotation = -3.1415925
-scale = Vector2(0.5, -0.5)
+flip_h = true
 
 [node name="fence_10" parent="movable_objects" unique_id=990606403 instance=ExtResource("3_6761a")]
 position = Vector2(764, 202)
-rotation = -3.1415925
-scale = Vector2(0.5, -0.5)
+flip_h = true
 
 [node name="fence_12" parent="movable_objects" unique_id=972659099 instance=ExtResource("3_6761a")]
 position = Vector2(692, 160)
-rotation = -3.1415925
-scale = Vector2(0.5, -0.5)
+flip_h = true
 
 [node name="pillar4" parent="movable_objects" unique_id=1791214478 instance=ExtResource("2_x42e6")]
 position = Vector2(962, 288)
@@ -99,27 +95,27 @@ position = Vector2(110, 336)
 
 [node name="fence_3" parent="movable_objects" unique_id=1847813709 instance=ExtResource("3_6761a")]
 position = Vector2(451, 558)
-scale = Vector2(-0.5, 0.5)
+flip_h = true
 
 [node name="fence_4" parent="movable_objects" unique_id=2126128838 instance=ExtResource("3_6761a")]
 position = Vector2(378, 516)
-scale = Vector2(-0.5, 0.5)
+flip_h = true
 
 [node name="fence_5" parent="movable_objects" unique_id=889488789 instance=ExtResource("3_6761a")]
 position = Vector2(305, 474)
-scale = Vector2(-0.5, 0.5)
+flip_h = true
 
 [node name="fence_11" parent="movable_objects" unique_id=1451365921 instance=ExtResource("3_6761a")]
 position = Vector2(233, 432)
-scale = Vector2(-0.5, 0.5)
+flip_h = true
 
 [node name="fence_19" parent="movable_objects" unique_id=1246341278 instance=ExtResource("3_6761a")]
 position = Vector2(160, 390)
-scale = Vector2(-0.5, 0.5)
+flip_h = true
 
 [node name="fence_20" parent="movable_objects" unique_id=1248658943 instance=ExtResource("3_6761a")]
 position = Vector2(620, 118)
-scale = Vector2(-0.5, 0.5)
+flip_h = true
 
 [node name="pillar" parent="movable_objects" unique_id=384986345 instance=ExtResource("2_x42e6")]
 position = Vector2(503, 560)
@@ -133,6 +129,10 @@ position = Vector2(1005, 583)
 [node name="dead_tree2" parent="movable_objects" unique_id=1082877323 instance=ExtResource("8_dnkej")]
 position = Vector2(891, -35)
 
+[node name="dead_tree3" parent="movable_objects" unique_id=1121609886 instance=ExtResource("8_dnkej")]
+position = Vector2(38, 182)
+flip_h = true
+
 [node name="dirtpatch_small" parent="movable_objects" unique_id=1748520992 instance=ExtResource("9_mm8aj")]
 position = Vector2(242, 355)
 
@@ -140,7 +140,7 @@ position = Vector2(242, 355)
 position = Vector2(700, 234)
 
 [node name="statue_dog" parent="movable_objects" unique_id=958997829 instance=ExtResource("10_wtwp4")]
-position = Vector2(140, 657)
+position = Vector2(127, 692)
 
 [node name="PointLight2D2" type="PointLight2D" parent="movable_objects/statue_dog" unique_id=1853196747]
 position = Vector2(10, -73)
@@ -148,7 +148,7 @@ texture = ExtResource("10_iav0o")
 texture_scale = 0.8
 
 [node name="statue_full" parent="movable_objects" unique_id=71883435 instance=ExtResource("11_iwr0g")]
-position = Vector2(259, 755)
+position = Vector2(18, 690)
 
 [node name="PointLight2D" type="PointLight2D" parent="movable_objects/statue_full" unique_id=1683522583]
 position = Vector2(2, -145)
@@ -157,10 +157,22 @@ texture = ExtResource("10_iav0o")
 texture_scale = 0.8
 
 [node name="pumpkin" parent="movable_objects" unique_id=1222323557 instance=ExtResource("5_6761a")]
-position = Vector2(51, 627)
+position = Vector2(80, 747)
 
 [node name="pumpkin2" parent="movable_objects" unique_id=1923723474 instance=ExtResource("5_6761a")]
-position = Vector2(-1, 733)
+position = Vector2(21, 769)
 
 [node name="firefly" parent="." unique_id=1158227695 instance=ExtResource("13_dnkej")]
 position = Vector2(866, 533)
+
+[node name="firefly2" parent="." unique_id=1928431413 instance=ExtResource("13_dnkej")]
+position = Vector2(167, 252)
+
+[node name="firefly3" parent="." unique_id=1461465336 instance=ExtResource("13_dnkej")]
+position = Vector2(662, 136)
+
+[node name="firefly4" parent="." unique_id=769010968 instance=ExtResource("13_dnkej")]
+position = Vector2(1046, 276)
+
+[node name="firefly5" parent="." unique_id=382185342 instance=ExtResource("13_dnkej")]
+position = Vector2(514, 497)
