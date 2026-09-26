@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://fqxxp66cwn5k"]
+
+[ext_resource type="Script" uid="uid://c8k0h4nw5u5ap" path="res://scripts/components/draggable_component.gd" id="1_7efa3"]
+[ext_resource type="Texture2D" uid="uid://cjec0vldq3dup" path="res://assets/sprites/animations/vines_lg2/PNG_0001.png" id="2_yves6"]
+[ext_resource type="Texture2D" uid="uid://w12ew18wk6cf" path="res://assets/sprites/animations/vines_lg2/PNG_0002.png" id="3_vbd22"]
+[ext_resource type="Texture2D" uid="uid://ivsfcsx55gwn" path="res://assets/sprites/animations/vines_lg2/PNG_0003.png" id="4_e5s50"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_aeu8w"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_yves6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_vbd22")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_e5s50")
+}],
+"loop": true,
+"name": &"default",
+"speed": 4.0
+}]
+
+[node name="large_vine_2" type="Area2D" unique_id=1590799470]
+script = ExtResource("1_7efa3")
+metadata/_custom_type_script = "uid://c8k0h4nw5u5ap"
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=293132132]
+polygon = PackedVector2Array(-35, -27, 3, -9, 23, -17, 37, -45, 24, -83, 17, -81, 21, -60, 19, -60, 7, -75, -1, -110, 9, -128, 24, -107, 48, -119, 44, -138, 27, -149, 5, -144, -20, -126, -23, -150, -4, -164, -30, -161, -39, -149, -38, -130, -29, -112, -33, -91, -32, -64, -31, -52)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=330357285]
+position = Vector2(0, -95)
+scale = Vector2(0.5, 0.5)
+sprite_frames = SubResource("SpriteFrames_aeu8w")
+autoplay = "default"
+frame_progress = 0.43570125

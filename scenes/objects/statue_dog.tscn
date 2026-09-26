@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://cbre1ad6iwdja"]
+
+[ext_resource type="Script" uid="uid://c8k0h4nw5u5ap" path="res://scripts/components/draggable_component.gd" id="1_xr0x4"]
+[ext_resource type="Texture2D" uid="uid://dvpvmxascytg2" path="res://assets/sprites/objects/statue_dog.png" id="2_55yud"]
+
+[node name="statue_dog" type="Area2D" unique_id=958997829]
+script = ExtResource("1_xr0x4")
+metadata/_custom_type_script = "uid://c8k0h4nw5u5ap"
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=950450067]
+polygon = PackedVector2Array(-22, -44, -25, -25, -3, -9, 6, -9, 29, -21, 16, -58, 20, -72, 29, -72, 14, -96, 9, -90, 3, -95, -2, -90, 1, -77, -3, -75, -2, -68, -1, -66, -5, -55)
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1141375020]
+position = Vector2(0, -50)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_55yud")

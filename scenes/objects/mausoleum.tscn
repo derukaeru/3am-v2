@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://88c7fmb8rhg6"]
+
+[ext_resource type="Script" uid="uid://c8k0h4nw5u5ap" path="res://scripts/components/draggable_component.gd" id="1_fs7au"]
+[ext_resource type="Texture2D" uid="uid://b1bhyehv4umby" path="res://assets/sprites/objects/mausoleum.png" id="2_d88lx"]
+
+[node name="mausoleum" type="Area2D" unique_id=1419065835]
+script = ExtResource("1_fs7au")
+metadata/_custom_type_script = "uid://c8k0h4nw5u5ap"
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=1975624728]
+position = Vector2(8.200012, 14.799988)
+polygon = PackedVector2Array(-114, -79, -7, -17, 115, -89, 117, -232, 7, -293, -117, -219)
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1244753667]
+position = Vector2(8.200012, -136.20001)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_d88lx")

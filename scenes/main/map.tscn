@@ -3,8 +3,8 @@
 [node name="map" type="Node2D" unique_id=805325771]
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=196402947]
-offset_left = -60.0
-offset_top = -39.0
-offset_right = 1066.0
-offset_bottom = 703.0
+offset_left = -91.0
+offset_top = -49.0
+offset_right = 955.0
+offset_bottom = 711.0
 color = Color(0.47055998, 0.68, 0.3808, 1)

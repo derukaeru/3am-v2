@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://byb4git0d5h61"]
+
+[ext_resource type="Script" uid="uid://c8k0h4nw5u5ap" path="res://scripts/components/draggable_component.gd" id="1_rmp1e"]
+[ext_resource type="Texture2D" uid="uid://cjg1rdqebv8k4" path="res://assets/sprites/nature/statue_coverd.png" id="2_cfsnh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sqnja"]
+size = Vector2(38, 120)
+
+[node name="statue_covered" type="Area2D" unique_id=1488849665]
+script = ExtResource("1_rmp1e")
+metadata/_custom_type_script = "uid://c8k0h4nw5u5ap"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1044236128]
+position = Vector2(1, -67)
+shape = SubResource("RectangleShape2D_sqnja")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=433941455]
+position = Vector2(-1, -65)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_cfsnh")

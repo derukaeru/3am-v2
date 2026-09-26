@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://bkxuf7hk8x426"]
+
+[ext_resource type="Script" uid="uid://c8k0h4nw5u5ap" path="res://scripts/components/draggable_component.gd" id="1_1d7as"]
+[ext_resource type="Texture2D" uid="uid://b7u3fqtrbw1sm" path="res://assets/sprites/objects/statue_full.png" id="2_fa74b"]
+
+[node name="statue_full" type="Area2D" unique_id=71883435]
+script = ExtResource("1_1d7as")
+metadata/_custom_type_script = "uid://c8k0h4nw5u5ap"
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=1797950907]
+polygon = PackedVector2Array(-61, -47, 1, -9, 61, -43, 52, -67, 33, -78, 34, -122, 13, -135, 19, -158, 12, -206, -15, -200, -21, -151, -10, -144, -11, -135, -32, -123, -33, -116, -30, -113, -29, -77, -51, -64)
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1164012890]
+position = Vector2(0, -113)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_fa74b")

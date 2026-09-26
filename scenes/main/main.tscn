@@ -4,7 +4,12 @@
 
 [node name="main" type="Node2D" unique_id=1368012993]
 
-[node name="map" parent="." unique_id=805325771 instance=ExtResource("1_iuonh")]
-
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1739132954]
 position = Vector2(512, 324)
+
+[node name="level" type="Node2D" parent="." unique_id=2094878977]
+
+[node name="map" parent="level" unique_id=805325771 instance=ExtResource("1_iuonh")]
+
+[node name="CanvasModulate" type="CanvasModulate" parent="." unique_id=1442064721]
+color = Color(0.15049115, 0.16073108, 0.2524957, 1)

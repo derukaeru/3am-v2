@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://dt3e4louba76k"]
+
+[ext_resource type="Script" uid="uid://c8k0h4nw5u5ap" path="res://scripts/components/draggable_component.gd" id="1_ku80l"]
+[ext_resource type="Texture2D" uid="uid://1r8mtsopohp6" path="res://assets/sprites/nature/deadspookytree.png" id="2_q6hbg"]
+
+[node name="dead_tree" type="Area2D" unique_id=662324910]
+script = ExtResource("1_ku80l")
+metadata/_custom_type_script = "uid://c8k0h4nw5u5ap"
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=1948197431]
+polygon = PackedVector2Array(-22, 82, 5, 74, 48, 112, 48, 81, 85, 85, 54, 69, 76, 63, 52, 50, 54, -11, 41, -45, 45, -67, 68, -65, 80, -99, 52, -84, 29, -109, 20, -70, 0, -79, -24, -69, -44, -79, -69, -59, -46, -71, -24, -57, -5, -64, 6, -42, 13, -19, 1, 25, 3, 50)
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1376433062]
+scale = Vector2(0.445, 0.445)
+texture = ExtResource("2_q6hbg")
