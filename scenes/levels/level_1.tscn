@@ -1,9 +1,18 @@
 [gd_scene format=3 uid="uid://el2o1hyahrha"]
 
 [ext_resource type="Texture2D" uid="uid://chu6rlqxltni1" path="res://assets/sprites/GrassBG.png" id="1_ksju7"]
+[ext_resource type="PackedScene" uid="uid://dtmasu1fri2h5" path="res://scenes/objects/gravehole.tscn" id="2_excbq"]
 [ext_resource type="PackedScene" uid="uid://gadh58duwjmr" path="res://scenes/objects/pillar.tscn" id="2_x42e6"]
 [ext_resource type="PackedScene" uid="uid://r8wn6glcym0w" path="res://scenes/objects/fence_1.tscn" id="3_6761a"]
 [ext_resource type="PackedScene" uid="uid://d4hkns38h66rr" path="res://scenes/objects/entrance.tscn" id="4_sk5k4"]
+[ext_resource type="PackedScene" uid="uid://caswyi77qfjfn" path="res://scenes/objects/pumpkin.tscn" id="5_6761a"]
+[ext_resource type="PackedScene" uid="uid://ty0yvocumcqh" path="res://scenes/objects/statue_base.tscn" id="7_iav0o"]
+[ext_resource type="PackedScene" uid="uid://dt3e4louba76k" path="res://scenes/objects/dead_tree.tscn" id="8_dnkej"]
+[ext_resource type="PackedScene" uid="uid://lrp5fg8t4qxi" path="res://scenes/objects/dirtpatch_small.tscn" id="9_mm8aj"]
+[ext_resource type="Texture2D" uid="uid://dyj0c421hwn0o" path="res://assets/sprites/misc/light_texture.png" id="10_iav0o"]
+[ext_resource type="PackedScene" uid="uid://cbre1ad6iwdja" path="res://scenes/objects/statue_dog.tscn" id="10_wtwp4"]
+[ext_resource type="PackedScene" uid="uid://bkxuf7hk8x426" path="res://scenes/objects/statue_full.tscn" id="11_iwr0g"]
+[ext_resource type="PackedScene" uid="uid://ds4v3foycg1ug" path="res://scenes/entities/firefly.tscn" id="13_dnkej"]
 
 [node name="level_1" type="Node2D" unique_id=451199170]
 
@@ -18,10 +27,16 @@ expand_mode = 1
 stretch_mode = 1
 
 [node name="movable_objects" type="Node2D" parent="." unique_id=1843577571]
-position = Vector2(58, 65)
+position = Vector2(105, 74)
+
+[node name="gravehole" parent="movable_objects" unique_id=1036409817 instance=ExtResource("2_excbq")]
+position = Vector2(483, 386)
+
+[node name="gravehole2" parent="movable_objects" unique_id=744101295 instance=ExtResource("2_excbq")]
+position = Vector2(623, 295)
 
 [node name="pillar3" parent="movable_objects" unique_id=482940113 instance=ExtResource("2_x42e6")]
-position = Vector2(643, 106)
+position = Vector2(569, 64)
 
 [node name="fence_8" parent="movable_objects" unique_id=38674026 instance=ExtResource("3_6761a")]
 position = Vector2(910, 286)
@@ -47,22 +62,22 @@ scale = Vector2(0.5, -0.5)
 position = Vector2(962, 288)
 
 [node name="fence_13" parent="movable_objects" unique_id=396122713 instance=ExtResource("3_6761a")]
-position = Vector2(302, 321)
+position = Vector2(228, 279)
 
 [node name="fence_14" parent="movable_objects" unique_id=1376921711 instance=ExtResource("3_6761a")]
-position = Vector2(229, 364)
+position = Vector2(155, 322)
 
 [node name="fence_15" parent="movable_objects" unique_id=906565347 instance=ExtResource("3_6761a")]
-position = Vector2(448, 235)
+position = Vector2(374, 193)
 
 [node name="fence_16" parent="movable_objects" unique_id=1579391819 instance=ExtResource("3_6761a")]
-position = Vector2(375, 278)
+position = Vector2(301, 236)
 
 [node name="fence_17" parent="movable_objects" unique_id=1658485550 instance=ExtResource("3_6761a")]
-position = Vector2(594, 149)
+position = Vector2(520, 107)
 
 [node name="fence_18" parent="movable_objects" unique_id=370570487 instance=ExtResource("3_6761a")]
-position = Vector2(521, 192)
+position = Vector2(447, 150)
 
 [node name="fence_6" parent="movable_objects" unique_id=5728875 instance=ExtResource("3_6761a")]
 position = Vector2(912, 343)
@@ -80,7 +95,7 @@ position = Vector2(629, 509)
 position = Vector2(556, 552)
 
 [node name="pillar2" parent="movable_objects" unique_id=1750977890 instance=ExtResource("2_x42e6")]
-position = Vector2(184, 378)
+position = Vector2(110, 336)
 
 [node name="fence_3" parent="movable_objects" unique_id=1847813709 instance=ExtResource("3_6761a")]
 position = Vector2(451, 558)
@@ -98,5 +113,54 @@ scale = Vector2(-0.5, 0.5)
 position = Vector2(233, 432)
 scale = Vector2(-0.5, 0.5)
 
+[node name="fence_19" parent="movable_objects" unique_id=1246341278 instance=ExtResource("3_6761a")]
+position = Vector2(160, 390)
+scale = Vector2(-0.5, 0.5)
+
+[node name="fence_20" parent="movable_objects" unique_id=1248658943 instance=ExtResource("3_6761a")]
+position = Vector2(620, 118)
+scale = Vector2(-0.5, 0.5)
+
 [node name="pillar" parent="movable_objects" unique_id=384986345 instance=ExtResource("2_x42e6")]
 position = Vector2(503, 560)
+
+[node name="statue_base" parent="movable_objects" unique_id=382195033 instance=ExtResource("7_iav0o")]
+position = Vector2(527, 273)
+
+[node name="dead_tree" parent="movable_objects" unique_id=662324910 instance=ExtResource("8_dnkej")]
+position = Vector2(1005, 583)
+
+[node name="dead_tree2" parent="movable_objects" unique_id=1082877323 instance=ExtResource("8_dnkej")]
+position = Vector2(891, -35)
+
+[node name="dirtpatch_small" parent="movable_objects" unique_id=1748520992 instance=ExtResource("9_mm8aj")]
+position = Vector2(242, 355)
+
+[node name="dirtpatch_small2" parent="movable_objects" unique_id=196939031 instance=ExtResource("9_mm8aj")]
+position = Vector2(700, 234)
+
+[node name="statue_dog" parent="movable_objects" unique_id=958997829 instance=ExtResource("10_wtwp4")]
+position = Vector2(140, 657)
+
+[node name="PointLight2D2" type="PointLight2D" parent="movable_objects/statue_dog" unique_id=1853196747]
+position = Vector2(10, -73)
+texture = ExtResource("10_iav0o")
+texture_scale = 0.8
+
+[node name="statue_full" parent="movable_objects" unique_id=71883435 instance=ExtResource("11_iwr0g")]
+position = Vector2(259, 755)
+
+[node name="PointLight2D" type="PointLight2D" parent="movable_objects/statue_full" unique_id=1683522583]
+position = Vector2(2, -145)
+shadow_enabled = true
+texture = ExtResource("10_iav0o")
+texture_scale = 0.8
+
+[node name="pumpkin" parent="movable_objects" unique_id=1222323557 instance=ExtResource("5_6761a")]
+position = Vector2(51, 627)
+
+[node name="pumpkin2" parent="movable_objects" unique_id=1923723474 instance=ExtResource("5_6761a")]
+position = Vector2(-1, 733)
+
+[node name="firefly" parent="." unique_id=1158227695 instance=ExtResource("13_dnkej")]
+position = Vector2(866, 533)

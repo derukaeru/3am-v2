@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://ds4v3foycg1ug"]
+
+[ext_resource type="Script" uid="uid://cdf0gs8b7tmfv" path="res://scenes/entities/firefly.gd" id="1_43dpq"]
+[ext_resource type="Texture2D" uid="uid://dyj0c421hwn0o" path="res://assets/sprites/misc/light_texture.png" id="1_yh55h"]
+
+[node name="firefly" type="Node2D" unique_id=1158227695]
+script = ExtResource("1_43dpq")
+
+[node name="PointLight2D" type="PointLight2D" parent="." unique_id=1714714131]
+texture = ExtResource("1_yh55h")

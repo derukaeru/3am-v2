@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://lrp5fg8t4qxi"]
+
+[ext_resource type="Texture2D" uid="uid://b3a1ladxatdrl" path="res://assets/sprites/nature/dirtpatch_sm.png" id="1_fhyhh"]
+
+[node name="dirtpatch_small" type="Sprite2D" unique_id=1748520992]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_fhyhh")

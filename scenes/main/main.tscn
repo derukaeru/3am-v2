@@ -9,7 +9,6 @@
 [node name="level_1" parent="level" unique_id=451199170 instance=ExtResource("1_hyk8p")]
 
 [node name="CanvasModulate" type="CanvasModulate" parent="." unique_id=1442064721]
-visible = false
 color = Color(0.15049115, 0.16073108, 0.2524957, 1)
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1739132954]

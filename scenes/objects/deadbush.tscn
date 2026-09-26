@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://cro6na0qs6skv"]
+
+[ext_resource type="Texture2D" uid="uid://hf6j6y4j4plf" path="res://assets/sprites/nature/deadbush.png" id="1_veure"]
+
+[node name="deadbush" type="Sprite2D" unique_id=643131952]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_veure")
