@@ -18,7 +18,7 @@
 [ext_resource type="Texture2D" uid="uid://cah5m8uq0jx3x" path="res://assets/sprites/animations/ghost4/PNG_0007.png" id="16_lfa5s"]
 [ext_resource type="Texture2D" uid="uid://bkg7x7s2radij" path="res://assets/sprites/animations/ghost4/PNG_0008.png" id="17_h7t0e"]
 [ext_resource type="Texture2D" uid="uid://dwk7igvmqpc3b" path="res://assets/sprites/animations/ghost4/PNG_0009.png" id="18_ntydl"]
-[ext_resource type="Script" uid="uid://bebhtgese0ri7" path="res://scenes/objects/ghost.gd" id="19_afyef"]
+[ext_resource type="Script" uid="uid://bebhtgese0ri7" path="res://scenes/objects/design/ghost.gd" id="19_afyef"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_xvlwf"]
 animations = [{

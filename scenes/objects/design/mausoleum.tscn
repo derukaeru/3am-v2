@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://drl1hpohuwh21"]
+
+[ext_resource type="Texture2D" uid="uid://b1bhyehv4umby" path="res://assets/sprites/objects/mausoleum.png" id="1_smq0u"]
+
+[node name="Mausoleum" type="Sprite2D" unique_id=1144689380]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_smq0u")

@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://dm6pivrtehf6y"]
+
+[ext_resource type="Texture2D" uid="uid://b4k2pqwqajjo5" path="res://assets/sprites/objects/rose_potted.png" id="1_g4aid"]
+
+[node name="RosePotted" type="Sprite2D" unique_id=82546543]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_g4aid")

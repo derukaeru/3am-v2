@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://bobyd66xm2vox"]
+
+[ext_resource type="Texture2D" uid="uid://bnvovfrl7o88b" path="res://assets/sprites/nature/pumpkin5.png" id="1_04itk"]
+
+[node name="pumpkin" type="Sprite2D" unique_id=1694028204]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_04itk")

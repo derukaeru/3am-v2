@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://blhos8o23ks7a"]
+
+[ext_resource type="Texture2D" uid="uid://cdvuc4s7m8u37" path="res://assets/sprites/objects/grave3.png" id="1_5k6ha"]
+
+[node name="Grave3" type="Sprite2D" unique_id=1540185907]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_5k6ha")

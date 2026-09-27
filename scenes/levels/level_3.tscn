@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://vei3v0xidygr"]
 
 [ext_resource type="Texture2D" uid="uid://chu6rlqxltni1" path="res://assets/sprites/GrassBG.png" id="1_o8c3j"]
+[ext_resource type="Texture2D" uid="uid://dyj0c421hwn0o" path="res://assets/sprites/misc/light_texture.png" id="2_44gv1"]
 
 [node name="level_3" type="Node2D" unique_id=1300577467]
 
@@ -19,3 +20,15 @@ stretch_mode = 1
 [node name="movable_objects" type="Node2D" parent="." unique_id=93006440]
 
 [node name="lights" type="Node2D" parent="." unique_id=929438110]
+
+[node name="main_light" type="PointLight2D" parent="lights" unique_id=562968409]
+position = Vector2(597, 442)
+energy = 0.6
+shadow_enabled = true
+texture = ExtResource("2_44gv1")
+texture_scale = 3.9
+
+[node name="objects_light" type="PointLight2D" parent="lights" unique_id=1846217649]
+position = Vector2(116, 732)
+texture = ExtResource("2_44gv1")
+texture_scale = 1.9

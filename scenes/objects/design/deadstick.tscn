@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://dg6iyfjfs2xv"]
+
+[ext_resource type="Texture2D" uid="uid://b1d05ofkaq3ih" path="res://assets/sprites/nature/deadstick.png" id="1_hac8l"]
+
+[node name="Deadstick" type="Sprite2D" unique_id=124838493]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_hac8l")

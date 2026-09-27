@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://cpllyuuoisfpe"]
+
+[ext_resource type="Texture2D" uid="uid://prsp0q46aasp" path="res://assets/sprites/nature/puddle2.png" id="1_kmdwk"]
+
+[node name="Puddle2" type="Sprite2D" unique_id=1060693748]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_kmdwk")

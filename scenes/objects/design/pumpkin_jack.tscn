@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://b1pudan3hxcux"]
+
+[ext_resource type="Texture2D" uid="uid://6q7e8xwa2pc4" path="res://assets/sprites/nature/pumpkin_jack.png" id="1_8gc0e"]
+[ext_resource type="Texture2D" uid="uid://dyj0c421hwn0o" path="res://assets/sprites/misc/light_texture.png" id="2_0xebl"]
+
+[node name="PumpkinJack" type="Sprite2D" unique_id=1995594847]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_8gc0e")
+
+[node name="PointLight2D" type="PointLight2D" parent="." unique_id=603962678]
+texture = ExtResource("2_0xebl")
+texture_scale = 0.85

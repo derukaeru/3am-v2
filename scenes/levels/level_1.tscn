@@ -1,23 +1,23 @@
 [gd_scene format=3 uid="uid://el2o1hyahrha"]
 
 [ext_resource type="Texture2D" uid="uid://chu6rlqxltni1" path="res://assets/sprites/GrassBG.png" id="1_ksju7"]
-[ext_resource type="PackedScene" uid="uid://dtmasu1fri2h5" path="res://scenes/objects/gravehole.tscn" id="2_excbq"]
-[ext_resource type="PackedScene" uid="uid://gadh58duwjmr" path="res://scenes/objects/pillar.tscn" id="2_x42e6"]
-[ext_resource type="PackedScene" uid="uid://r8wn6glcym0w" path="res://scenes/objects/fence_1.tscn" id="3_6761a"]
-[ext_resource type="PackedScene" uid="uid://d4hkns38h66rr" path="res://scenes/objects/entrance.tscn" id="4_sk5k4"]
-[ext_resource type="PackedScene" uid="uid://caswyi77qfjfn" path="res://scenes/objects/pumpkin.tscn" id="5_6761a"]
-[ext_resource type="PackedScene" uid="uid://ty0yvocumcqh" path="res://scenes/objects/statue_base.tscn" id="7_iav0o"]
-[ext_resource type="PackedScene" uid="uid://dt3e4louba76k" path="res://scenes/objects/dead_tree.tscn" id="8_dnkej"]
+[ext_resource type="PackedScene" uid="uid://dtmasu1fri2h5" path="res://scenes/objects/design/gravehole.tscn" id="2_excbq"]
+[ext_resource type="PackedScene" uid="uid://gadh58duwjmr" path="res://scenes/objects/design/pillar.tscn" id="2_x42e6"]
+[ext_resource type="PackedScene" uid="uid://r8wn6glcym0w" path="res://scenes/objects/design/fence_1.tscn" id="3_6761a"]
+[ext_resource type="PackedScene" uid="uid://d4hkns38h66rr" path="res://scenes/objects/design/entrance.tscn" id="4_sk5k4"]
+[ext_resource type="PackedScene" uid="uid://caswyi77qfjfn" path="res://scenes/objects/movable/pumpkin.tscn" id="5_6761a"]
+[ext_resource type="PackedScene" uid="uid://ty0yvocumcqh" path="res://scenes/objects/movable/statue_base.tscn" id="7_iav0o"]
+[ext_resource type="PackedScene" uid="uid://dt3e4louba76k" path="res://scenes/objects/design/dead_tree.tscn" id="8_dnkej"]
 [ext_resource type="Texture2D" uid="uid://hf6j6y4j4plf" path="res://assets/sprites/nature/deadbush.png" id="8_np2pn"]
-[ext_resource type="PackedScene" uid="uid://lrp5fg8t4qxi" path="res://scenes/objects/dirtpatch_small.tscn" id="9_mm8aj"]
+[ext_resource type="PackedScene" uid="uid://lrp5fg8t4qxi" path="res://scenes/objects/design/dirtpatch_small.tscn" id="9_mm8aj"]
 [ext_resource type="Texture2D" uid="uid://4y0nomxq3ftu" path="res://assets/sprites/nature/pumpkin2.png" id="9_v6ha0"]
 [ext_resource type="Texture2D" uid="uid://bdqelveager4y" path="res://assets/sprites/nature/pumpkin4.png" id="10_gmpev"]
 [ext_resource type="Texture2D" uid="uid://dyj0c421hwn0o" path="res://assets/sprites/misc/light_texture.png" id="10_iav0o"]
-[ext_resource type="PackedScene" uid="uid://cbre1ad6iwdja" path="res://scenes/objects/statue_dog.tscn" id="10_wtwp4"]
-[ext_resource type="PackedScene" uid="uid://bkxuf7hk8x426" path="res://scenes/objects/statue_full.tscn" id="11_iwr0g"]
+[ext_resource type="PackedScene" uid="uid://cbre1ad6iwdja" path="res://scenes/objects/movable/statue_dog.tscn" id="10_wtwp4"]
+[ext_resource type="PackedScene" uid="uid://bkxuf7hk8x426" path="res://scenes/objects/movable/statue_full.tscn" id="11_iwr0g"]
 [ext_resource type="Texture2D" uid="uid://nd0m74r7pe2f" path="res://assets/sprites/nature/pumpkin_busted.png" id="11_mkypq"]
 [ext_resource type="Texture2D" uid="uid://bd547kc0kkdqq" path="res://assets/sprites/nature/SunknRock1.png" id="12_mkypq"]
-[ext_resource type="PackedScene" uid="uid://cfndntvf87s3x" path="res://scenes/objects/boquet.tscn" id="12_mm8aj"]
+[ext_resource type="PackedScene" uid="uid://cfndntvf87s3x" path="res://scenes/objects/movable/boquet.tscn" id="12_mm8aj"]
 [ext_resource type="PackedScene" uid="uid://ds4v3foycg1ug" path="res://scenes/entities/firefly.tscn" id="13_dnkej"]
 [ext_resource type="Texture2D" uid="uid://uxjhcjopxl4y" path="res://assets/sprites/nature/vines_sm2.png" id="13_ndtll"]
 [ext_resource type="Texture2D" uid="uid://bjkfyra6yf16m" path="res://assets/sprites/nature/Flower1.png" id="21_7h2jl"]
@@ -237,14 +237,14 @@ position = Vector2(1046, 276)
 [node name="firefly5" parent="lights" unique_id=726460184 instance=ExtResource("13_dnkej")]
 position = Vector2(535, 842)
 
-[node name="PointLight2D" type="PointLight2D" parent="lights" unique_id=18368091]
+[node name="main_light" type="PointLight2D" parent="lights" unique_id=18368091]
 position = Vector2(597, 442)
 energy = 0.6
 shadow_enabled = true
 texture = ExtResource("10_iav0o")
 texture_scale = 3.9
 
-[node name="PointLight2D2" type="PointLight2D" parent="lights" unique_id=2095558970]
+[node name="objects_light" type="PointLight2D" parent="lights" unique_id=2095558970]
 position = Vector2(116, 732)
 texture = ExtResource("10_iav0o")
 texture_scale = 1.9

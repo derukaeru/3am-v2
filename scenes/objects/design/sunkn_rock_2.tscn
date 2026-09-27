@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://2tmk4100tvnr"]
+
+[ext_resource type="Texture2D" uid="uid://dx11ce4mac5i1" path="res://assets/sprites/nature/SunknRock2.png" id="1_ipagw"]
+
+[node name="SunknRock2" type="Sprite2D" unique_id=980367884]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_ipagw")
