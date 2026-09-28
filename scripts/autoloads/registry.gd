@@ -11,3 +11,12 @@ var UID: Dictionary = {
 	"gravedirt": "uid://b46ikuxxyo0sw",
 	"ghost": "uid://bbn15mdbixdgm",
 }
+
+var levels: Array = [
+	"uid://el2o1hyahrha",
+	"uid://b72veamv1y554",
+	"uid://vei3v0xidygr",
+	"uid://b5vxqdgmsha65",
+	"uid://bq1wqvw1isfff",
+	"uid://bc0rr6ns1sdft"
+]

@@ -53,30 +53,35 @@ text = "1"
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 theme_override_font_sizes/font_size = 24
+disabled = true
 text = "2"
 
 [node name="level_3" type="Button" parent="levels_background/levels" unique_id=950686619]
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 theme_override_font_sizes/font_size = 24
+disabled = true
 text = "3"
 
 [node name="level_4" type="Button" parent="levels_background/levels" unique_id=715228738]
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 theme_override_font_sizes/font_size = 24
+disabled = true
 text = "4"
 
 [node name="level_5" type="Button" parent="levels_background/levels" unique_id=79055784]
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 theme_override_font_sizes/font_size = 24
+disabled = true
 text = "5"
 
 [node name="level_6" type="Button" parent="levels_background/levels" unique_id=47090004]
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 theme_override_font_sizes/font_size = 24
+disabled = true
 text = "6"
 
 [connection signal="pressed" from="levels_background/levels/level_1" to="." method="go_to_level" binds= [1]]

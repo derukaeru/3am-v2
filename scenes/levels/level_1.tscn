@@ -20,6 +20,7 @@
 [ext_resource type="PackedScene" uid="uid://cfndntvf87s3x" path="res://scenes/objects/movable/boquet.tscn" id="12_mm8aj"]
 [ext_resource type="PackedScene" uid="uid://ds4v3foycg1ug" path="res://scenes/entities/firefly.tscn" id="13_dnkej"]
 [ext_resource type="Texture2D" uid="uid://uxjhcjopxl4y" path="res://assets/sprites/nature/vines_sm2.png" id="13_ndtll"]
+[ext_resource type="Script" uid="uid://2x5aqyeudj7a" path="res://scripts/components/object_anchor.gd" id="14_ndtll"]
 [ext_resource type="Texture2D" uid="uid://bjkfyra6yf16m" path="res://assets/sprites/nature/Flower1.png" id="21_7h2jl"]
 
 [node name="level_1" type="Node2D" unique_id=451199170]
@@ -202,25 +203,56 @@ flip_h = true
 [node name="movable_objects" type="Node2D" parent="." unique_id=1843577571]
 position = Vector2(105, 74)
 
-[node name="statue_base" parent="movable_objects" unique_id=382195033 instance=ExtResource("7_iav0o")]
+[node name="ObjectAnchor" type="Node2D" parent="movable_objects" unique_id=1195470270]
 position = Vector2(527, 273)
+script = ExtResource("14_ndtll")
+metadata/_custom_type_script = "uid://2x5aqyeudj7a"
 
-[node name="statue_dog" parent="movable_objects" unique_id=958997829 instance=ExtResource("10_wtwp4")]
-position = Vector2(127, 692)
+[node name="statue_base" parent="movable_objects/ObjectAnchor" unique_id=382195033 instance=ExtResource("7_iav0o")]
+position = Vector2(-413, 413)
 
-[node name="statue_full" parent="movable_objects" unique_id=71883435 instance=ExtResource("11_iwr0g")]
-position = Vector2(18, 690)
+[node name="ObjectAnchor2" type="Node2D" parent="movable_objects" unique_id=2110992202]
+position = Vector2(527, 182)
+script = ExtResource("14_ndtll")
+metadata/_custom_type_script = "uid://2x5aqyeudj7a"
 
-[node name="pumpkin" parent="movable_objects" unique_id=1222323557 instance=ExtResource("5_6761a")]
-position = Vector2(80, 747)
+[node name="statue_dog" parent="movable_objects/ObjectAnchor2" unique_id=958997829 instance=ExtResource("10_wtwp4")]
+position = Vector2(-447, 563)
 
-[node name="pumpkin2" parent="movable_objects" unique_id=1923723474 instance=ExtResource("5_6761a")]
-position = Vector2(21, 769)
+[node name="ObjectAnchor3" type="Node2D" parent="movable_objects" unique_id=1246297118]
+position = Vector2(383, 376)
+script = ExtResource("14_ndtll")
+metadata/_custom_type_script = "uid://2x5aqyeudj7a"
 
-[node name="boquet" parent="movable_objects" unique_id=1387670597 instance=ExtResource("12_mm8aj")]
-position = Vector2(-44, 725)
+[node name="statue_full" parent="movable_objects/ObjectAnchor3" unique_id=71883435 instance=ExtResource("11_iwr0g")]
+position = Vector2(-418, 319)
+
+[node name="ObjectAnchor4" type="Node2D" parent="movable_objects" unique_id=1736409096]
+position = Vector2(694, 255)
+script = ExtResource("14_ndtll")
+metadata/_custom_type_script = "uid://2x5aqyeudj7a"
+
+[node name="pumpkin" parent="movable_objects/ObjectAnchor4" unique_id=1222323557 instance=ExtResource("5_6761a")]
+position = Vector2(-733, 509)
+
+[node name="ObjectAnchor5" type="Node2D" parent="movable_objects" unique_id=738029874]
+position = Vector2(230, 375)
+script = ExtResource("14_ndtll")
+metadata/_custom_type_script = "uid://2x5aqyeudj7a"
+
+[node name="pumpkin2" parent="movable_objects/ObjectAnchor5" unique_id=1923723474 instance=ExtResource("5_6761a")]
+position = Vector2(-207, 341)
+
+[node name="ObjectAnchor6" type="Node2D" parent="movable_objects" unique_id=973828626]
+position = Vector2(536, 457)
+script = ExtResource("14_ndtll")
+metadata/_custom_type_script = "uid://2x5aqyeudj7a"
+
+[node name="boquet" parent="movable_objects/ObjectAnchor6" unique_id=1387670597 instance=ExtResource("12_mm8aj")]
+position = Vector2(-519, 314)
 
 [node name="lights" type="Node2D" parent="." unique_id=681304105]
+visible = false
 
 [node name="firefly" parent="lights" unique_id=1158227695 instance=ExtResource("13_dnkej")]
 position = Vector2(934, 789)

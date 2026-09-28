@@ -1,8 +1,10 @@
 extends Node
 
 @onready var pause_screen = load(Registry.UID["pause_screen"]).instantiate()
-
 var canvas_layer = CanvasLayer.new()
+
+var level: int = 1
+var locked_levels: Array = [false, true, true, true, true, true]
 
 func _ready() -> void:
 	add_child(canvas_layer)

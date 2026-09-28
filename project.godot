@@ -38,6 +38,7 @@ enabled=PackedStringArray("res://addons/godot_super-wakatime/plugin.cfg")
 [global_group]
 
 gravehole=""
+object_anchor=""
 
 [gui]
 

@@ -25,6 +25,7 @@
 [ext_resource type="Texture2D" uid="uid://4y0nomxq3ftu" path="res://assets/sprites/nature/pumpkin2.png" id="22_tfqnh"]
 [ext_resource type="Texture2D" uid="uid://dkbjel6gjayr4" path="res://assets/sprites/nature/skull.png" id="23_txacc"]
 [ext_resource type="Texture2D" uid="uid://dyj0c421hwn0o" path="res://assets/sprites/misc/light_texture.png" id="25_0rory"]
+[ext_resource type="PackedScene" uid="uid://bdwwmuep6qohb" path="res://scenes/menu/level_select_screen.tscn" id="25_lo53v"]
 
 [node name="title_screen" type="Control" unique_id=198211424]
 layout_mode = 3
@@ -274,10 +275,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -161.5
-offset_top = -80.0
-offset_right = 161.5
-offset_bottom = 80.0
+offset_left = -161.0
+offset_top = -35.0
+offset_right = 162.0
+offset_bottom = 125.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 8
@@ -302,6 +303,10 @@ text = "exit
 "
 
 [node name="settings_screen" parent="." unique_id=237862792 instance=ExtResource("1_cbih2")]
+visible = false
+layout_mode = 1
+
+[node name="level_select_screen" parent="." unique_id=1964962743 instance=ExtResource("25_lo53v")]
 visible = false
 layout_mode = 1
 
