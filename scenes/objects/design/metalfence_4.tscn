@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://bjn2ng5rbk1mo"]
+
+[ext_resource type="Texture2D" uid="uid://cqyr6x6iw8mc2" path="res://assets/sprites/objects/metalfence4.png" id="1_rngu4"]
+
+[node name="Metalfence4" type="Sprite2D" unique_id=1462656775]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_rngu4")

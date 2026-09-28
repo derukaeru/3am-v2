@@ -2,12 +2,11 @@ extends Node2D
 
 @onready var level_container: Node2D = $level_container
 
-const PERFECT_DIST: float = 8.0
+const PERFECT_DIST: float = 12.0
 const MAX_DIST: float = 120.0 
 
-func ready() -> void:
+func _ready() -> void:
 	load_level()
-	pass
 
 func next_level() -> void:
 	pass
@@ -39,7 +38,6 @@ func submit_layout() -> void:
 	# set score
 	
 	# check if unlocked next level or not based on score
-	
 
 func score_object(anchor: Node2D, object: Node2D) -> float:
 	var dist := object.global_position.distance_to(anchor.global_position)
