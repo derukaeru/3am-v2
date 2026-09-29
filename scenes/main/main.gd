@@ -5,6 +5,8 @@ extends Node2D
 const PERFECT_DIST: float = 12.0
 const MAX_DIST: float = 120.0 
 
+var submitted: bool = false
+
 func _ready() -> void:
 	load_level()
 
@@ -25,6 +27,9 @@ func load_level() -> void:
 	level_container.add_child(level)
 
 func submit_layout() -> void:
+	if submitted: return
+	submitted = true
+	
 	var anchors: Array = Util.get_group_nodes("object_anchor")
 	var total_score: float = 0.0
 	

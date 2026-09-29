@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://dojtinawt2k6a"]
+
+[ext_resource type="Texture2D" uid="uid://bp108luutajut" path="res://assets/sprites/photos/photo_background.png" id="1_12u5e"]
+[ext_resource type="Texture2D" uid="uid://danhdy1rlfff5" path="res://assets/sprites/photos/level_1.png" id="2_e4sru"]
+
+[node name="level_1" type="TextureRect" unique_id=451390071]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -537.0
+offset_top = -431.0
+offset_right = 487.0
+offset_bottom = 431.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.885, 0.885)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+texture = ExtResource("1_12u5e")
+
+[node name="photo" type="TextureRect" parent="." unique_id=762329325]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -537.0
+offset_top = -431.0
+offset_right = 537.0
+offset_bottom = 431.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.885, 0.885)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+texture = ExtResource("2_e4sru")

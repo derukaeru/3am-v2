@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://b72veamv1y554"]
 
-[ext_resource type="Texture2D" uid="uid://chu6rlqxltni1" path="res://assets/sprites/GrassBG.png" id="1_j2425"]
+[ext_resource type="Texture2D" uid="uid://chu6rlqxltni1" path="res://assets/sprites/misc/grass_bg.png" id="1_j2425"]
 [ext_resource type="Texture2D" uid="uid://dyj0c421hwn0o" path="res://assets/sprites/misc/light_texture.png" id="2_g2h2n"]
 [ext_resource type="PackedScene" uid="uid://cro6na0qs6skv" path="res://scenes/objects/design/deadbush.tscn" id="2_p4se4"]
 [ext_resource type="PackedScene" uid="uid://dt3e4louba76k" path="res://scenes/objects/design/dead_tree.tscn" id="2_ra442"]

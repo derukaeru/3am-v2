@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://el2o1hyahrha"]
 
-[ext_resource type="Texture2D" uid="uid://chu6rlqxltni1" path="res://assets/sprites/GrassBG.png" id="1_ksju7"]
+[ext_resource type="Texture2D" uid="uid://chu6rlqxltni1" path="res://assets/sprites/misc/grass_bg.png" id="1_ksju7"]
 [ext_resource type="PackedScene" uid="uid://dtmasu1fri2h5" path="res://scenes/objects/design/gravehole.tscn" id="2_excbq"]
 [ext_resource type="PackedScene" uid="uid://gadh58duwjmr" path="res://scenes/objects/design/pillar.tscn" id="2_x42e6"]
 [ext_resource type="PackedScene" uid="uid://r8wn6glcym0w" path="res://scenes/objects/design/fence_1.tscn" id="3_6761a"]

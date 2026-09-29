@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bu6rspvir5pj0"
-path="res://.godot/imported/SpriteSheet_Graveyard.png-c4a22b854c6f779cc4b28905ed3c2dc7.ctex"
+path="res://.godot/imported/SpriteSheet_Graveyard.png-55fcee96e5584713842919ba61b2ffb0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/SpriteSheet_Graveyard.png"
-dest_files=["res://.godot/imported/SpriteSheet_Graveyard.png-c4a22b854c6f779cc4b28905ed3c2dc7.ctex"]
+source_file="res://assets/sprites/nature/SpriteSheet_Graveyard.png"
+dest_files=["res://.godot/imported/SpriteSheet_Graveyard.png-55fcee96e5584713842919ba61b2ffb0.ctex"]
 
 [params]
 

@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://bew4wb2odjju" path="res://scenes/menu/title_screen.gd" id="1_200k4"]
 [ext_resource type="PackedScene" uid="uid://b6iiso164bnv6" path="res://scenes/menu/settings_screen.tscn" id="1_cbih2"]
-[ext_resource type="Texture2D" uid="uid://chu6rlqxltni1" path="res://assets/sprites/GrassBG.png" id="2_t5ho8"]
+[ext_resource type="Texture2D" uid="uid://chu6rlqxltni1" path="res://assets/sprites/misc/grass_bg.png" id="2_t5ho8"]
 [ext_resource type="PackedScene" uid="uid://dt3e4louba76k" path="res://scenes/objects/design/dead_tree.tscn" id="3_lo53v"]
 [ext_resource type="Texture2D" uid="uid://bjkfyra6yf16m" path="res://assets/sprites/nature/Flower1.png" id="4_pddr3"]
 [ext_resource type="PackedScene" uid="uid://cfndntvf87s3x" path="res://scenes/objects/movable/boquet.tscn" id="5_fru7b"]

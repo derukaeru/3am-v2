@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://h3pgsqiph51e"]
 
 [ext_resource type="Texture2D" uid="uid://b041yge0lg0jy" path="res://assets/sprites/nature/bat1.png" id="1_bd378"]
-[ext_resource type="Texture2D" uid="uid://chu6rlqxltni1" path="res://assets/sprites/GrassBG.png" id="1_i5nsj"]
+[ext_resource type="Texture2D" uid="uid://chu6rlqxltni1" path="res://assets/sprites/misc/grass_bg.png" id="1_i5nsj"]
 [ext_resource type="Texture2D" uid="uid://cmv20nftcalmp" path="res://assets/sprites/nature/bat2.png" id="2_7mmje"]
 [ext_resource type="Texture2D" uid="uid://hf6j6y4j4plf" path="res://assets/sprites/nature/deadbush.png" id="3_3r15m"]
 [ext_resource type="Texture2D" uid="uid://dexxohvat5ggp" path="res://assets/sprites/nature/deadflower.png" id="4_5bt2d"]

@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bq1wqvw1isfff"]
 
-[ext_resource type="Texture2D" uid="uid://chu6rlqxltni1" path="res://assets/sprites/GrassBG.png" id="1_r1vs7"]
+[ext_resource type="Texture2D" uid="uid://chu6rlqxltni1" path="res://assets/sprites/misc/grass_bg.png" id="1_r1vs7"]
 [ext_resource type="Texture2D" uid="uid://dyj0c421hwn0o" path="res://assets/sprites/misc/light_texture.png" id="2_845dy"]
 
 [node name="level_5" type="Node2D" unique_id=1103402420]
