@@ -66,9 +66,11 @@ position = Vector2(508, 234.5)
 
 [node name="pillar_broken2" parent="design" unique_id=1577973902 instance=ExtResource("6_n6eey")]
 position = Vector2(163, 446)
+flip_h = true
 
 [node name="pillar_broken3" parent="design" unique_id=1060528130 instance=ExtResource("6_n6eey")]
 position = Vector2(1156, 399)
+flip_h = true
 
 [node name="Metalfence4" parent="design" unique_id=1912349384 instance=ExtResource("2_jql0x")]
 position = Vector2(565.5, 689)

@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://dne6hvs5t44u7"]
+
+[ext_resource type="Texture2D" uid="uid://ckf4sknyv6tk4" path="res://assets/sprites/animations/vines_sm1/PNG_0001.png" id="1_exdtb"]
+[ext_resource type="Texture2D" uid="uid://b227qsap023k5" path="res://assets/sprites/animations/vines_sm1/PNG_0002.png" id="2_fj3w7"]
+[ext_resource type="Texture2D" uid="uid://beqiandlwwpar" path="res://assets/sprites/animations/vines_sm1/PNG_0003.png" id="3_dr0mc"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5h4cs"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_exdtb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_fj3w7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_dr0mc")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="vines_small" type="AnimatedSprite2D" unique_id=396420708]
+scale = Vector2(0.5, 0.5)
+sprite_frames = SubResource("SpriteFrames_5h4cs")
+autoplay = "default"
+frame_progress = 0.39281574

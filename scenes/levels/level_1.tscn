@@ -201,6 +201,17 @@ scale = Vector2(0.5, 0.5)
 texture = ExtResource("13_ndtll")
 flip_h = true
 
+[node name="Flower1" type="Sprite2D" parent="design" unique_id=428896920]
+position = Vector2(295, 21)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("21_7h2jl")
+
+[node name="Flower2" type="Sprite2D" parent="design" unique_id=172218476]
+position = Vector2(1020, 247)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("21_7h2jl")
+flip_h = true
+
 [node name="movable_objects" type="Node2D" parent="." unique_id=1843577571]
 position = Vector2(105, 74)
 
@@ -280,14 +291,3 @@ texture_scale = 3.9
 position = Vector2(116, 732)
 texture = ExtResource("10_iav0o")
 texture_scale = 1.9
-
-[node name="Flower1" type="Sprite2D" parent="." unique_id=428896920]
-position = Vector2(295, 21)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("21_7h2jl")
-
-[node name="Flower2" type="Sprite2D" parent="." unique_id=172218476]
-position = Vector2(1020, 247)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("21_7h2jl")
-flip_h = true
