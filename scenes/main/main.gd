@@ -3,10 +3,12 @@ extends Node2D
 @onready var level_container: Node2D = $level_container
 @onready var tutorial: Control = $CanvasLayer/tutorial
 @onready var end_screen: Control = $CanvasLayer/end_screen
+@onready var end_screen_animation: AnimationPlayer = $CanvasLayer/end_screen/AnimationPlayer
+@onready var photograph: Control = $CanvasLayer/photograph
+@onready var photograph_animation: AnimationPlayer = $CanvasLayer/photograph/AnimationPlayer
 
 const PERFECT_DIST: float = 12.0
 const MAX_DIST: float = 120.0 
-
 var submitted: bool = false
 
 func _ready() -> void:
@@ -14,6 +16,8 @@ func _ready() -> void:
 	
 	if GameManager.level == 1:
 		tutorial.show()
+	else:
+		tutorial.hide() 
 
 func next_level() -> void:
 	GameManager.level += 1
@@ -23,8 +27,6 @@ func menu() -> void:
 
 func retry() -> void:
 	pass
-
-
 
 func load_level() -> void:
 	var level: Node2D = load(Registry.levels[GameManager.level - 1]).instantiate()
@@ -56,3 +58,14 @@ func score_object(anchor: Node2D, object: Node2D) -> float:
 	var pos_score := 1.0 - clampf(inverse_lerp(PERFECT_DIST, MAX_DIST, dist), 0.0, 1.0)
 	
 	return pos_score
+
+func tutorial_continue() -> void:
+	tutorial.hide()
+
+func show_photograph() -> void:
+	# change photo here
+	
+	photograph.show()
+	photograph_animation.play("open")
+	await photograph_animation.animation_finished
+	photograph.hide()

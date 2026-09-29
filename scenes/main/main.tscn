@@ -4,6 +4,12 @@
 [ext_resource type="PackedScene" uid="uid://el2o1hyahrha" path="res://scenes/levels/level_1.tscn" id="2_iuonh"]
 [ext_resource type="Texture2D" uid="uid://dyj0c421hwn0o" path="res://assets/sprites/misc/light_texture.png" id="3_k2fmo"]
 
+[sub_resource type="LabelSettings" id="LabelSettings_k2fmo"]
+font_size = 48
+
+[sub_resource type="LabelSettings" id="LabelSettings_l3cfh"]
+font_size = 40
+
 [node name="main" type="Node2D" unique_id=1368012993]
 script = ExtResource("1_iuonh")
 
@@ -41,11 +47,77 @@ texture = ExtResource("3_k2fmo")
 [node name="tutorial" type="Control" parent="CanvasLayer" unique_id=691015934]
 visible = false
 layout_mode = 3
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/tutorial" unique_id=1330719271]
+[node name="background" type="ColorRect" parent="CanvasLayer/tutorial" unique_id=1433350416]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -485.5
+offset_top = -362.5
+offset_right = 485.5
+offset_bottom = 362.5
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset_ratio = Vector2(0.5, 0.5)
+color = Color(0, 0, 0, 0.84705883)
+
+[node name="how" type="Label" parent="CanvasLayer/tutorial/background" unique_id=1568933426]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -165.0
+offset_top = 34.5
+offset_right = 165.0
+offset_bottom = 82.5
+grow_horizontal = 2
+text = "How this works"
+label_settings = SubResource("LabelSettings_k2fmo")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="details" type="Label" parent="CanvasLayer/tutorial/background" unique_id=949993288]
+layout_mode = 0
+offset_left = 66.5
+offset_top = 118.5
+offset_right = 941.5
+offset_bottom = 646.5
+text = "1. You have 10 seconds to memorize a layout that will be given to you.
+
+2. After that, you need to recreate the layout using the objects on the bottom left corner.
+
+3. Don't worry! You'll only have to remember the things inside the graveyard walls.
+
+4. You need to have 75% accuracy or higher to unlock the next level.
+
+5. Goodluck!"
+label_settings = SubResource("LabelSettings_l3cfh")
+autowrap_mode = 3
+
+[node name="continue" type="Button" parent="CanvasLayer/tutorial/background" unique_id=1059862150]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -123.0
+offset_top = -98.5
+offset_right = 123.0
+offset_bottom = -40.0
+grow_horizontal = 2
+grow_vertical = 0
+pivot_offset_ratio = Vector2(0.5, 0.5)
+theme_override_font_sizes/font_size = 32
+text = "continue"
 
 [node name="end_screen" type="Control" parent="CanvasLayer" unique_id=1759761281]
 visible = false
@@ -56,4 +128,31 @@ offset_bottom = 40.0
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/end_screen" unique_id=986924982]
 
+[node name="menu" type="Button" parent="CanvasLayer/end_screen" unique_id=224510137]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="retry" type="Button" parent="CanvasLayer/end_screen" unique_id=2046077124]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="next_level" type="Button" parent="CanvasLayer/end_screen" unique_id=801606020]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="photograph" type="Control" parent="CanvasLayer" unique_id=1783831569]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1280.0
+offset_bottom = 856.0
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/photograph" unique_id=2143247095]
+
 [connection signal="pressed" from="CanvasLayer/submit" to="." method="submit_layout"]
+[connection signal="pressed" from="CanvasLayer/tutorial/background/continue" to="." method="tutorial_continue"]
+[connection signal="pressed" from="CanvasLayer/end_screen/menu" to="." method="menu"]
+[connection signal="pressed" from="CanvasLayer/end_screen/retry" to="." method="retry"]
+[connection signal="pressed" from="CanvasLayer/end_screen/next_level" to="." method="next_level"]
