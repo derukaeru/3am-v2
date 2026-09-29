@@ -18,6 +18,7 @@
 [ext_resource type="PackedScene" uid="uid://ckxrglikxrs5x" path="res://scenes/objects/design/flower_2.tscn" id="15_h717f"]
 [ext_resource type="PackedScene" uid="uid://7aeoc7n5j2mb" path="res://scenes/objects/design/gravedirt.tscn" id="16_3j2bn"]
 [ext_resource type="PackedScene" uid="uid://3n8fssadrrr5" path="res://scenes/objects/movable/bat_box.tscn" id="17_l8eod"]
+[ext_resource type="Script" uid="uid://2x5aqyeudj7a" path="res://scripts/components/object_anchor.gd" id="18_gg75w"]
 [ext_resource type="PackedScene" uid="uid://cfndntvf87s3x" path="res://scenes/objects/movable/boquet.tscn" id="18_sfnul"]
 [ext_resource type="PackedScene" uid="uid://cjej1bwq5m6hx" path="res://scenes/objects/movable/rose_potted.tscn" id="19_lolfx"]
 [ext_resource type="PackedScene" uid="uid://caswyi77qfjfn" path="res://scenes/objects/movable/pumpkin.tscn" id="20_004to"]
@@ -104,7 +105,7 @@ position = Vector2(847, 757)
 flip_h = true
 
 [node name="dead_tree3" parent="design" unique_id=1183066593 instance=ExtResource("6_fsnos")]
-position = Vector2(19, 544)
+position = Vector2(-11, 382)
 
 [node name="deadbush" parent="design" unique_id=643131952 instance=ExtResource("7_mxx4w")]
 position = Vector2(122, 251)
@@ -142,11 +143,11 @@ position = Vector2(401, 846)
 flip_h = true
 
 [node name="vines_small5" parent="design" unique_id=898493223 instance=ExtResource("10_5ke18")]
-position = Vector2(290, 617)
+position = Vector2(472, 654)
 flip_h = true
 
 [node name="Deadflower" parent="design" unique_id=654652627 instance=ExtResource("11_j14br")]
-position = Vector2(95, 735)
+position = Vector2(227, 305)
 
 [node name="Deadflower2" parent="design" unique_id=1981959234 instance=ExtResource("11_j14br")]
 position = Vector2(1016, 818)
@@ -161,7 +162,7 @@ position = Vector2(601, 480)
 position = Vector2(1081, 561)
 
 [node name="dirtpatch_small" parent="design" unique_id=1748520992 instance=ExtResource("13_gruok")]
-position = Vector2(53, 807)
+position = Vector2(185, 377)
 
 [node name="dirtpatch_small2" parent="design" unique_id=656673932 instance=ExtResource("13_gruok")]
 position = Vector2(605, 233)
@@ -196,40 +197,85 @@ flip_h = true
 
 [node name="movable_objects" type="Node2D" parent="." unique_id=1522555816]
 
-[node name="bat_box" parent="movable_objects" unique_id=1846462244 instance=ExtResource("17_l8eod")]
-position = Vector2(346, 454)
+[node name="ObjectAnchor" type="Node2D" parent="movable_objects" unique_id=714506533]
+script = ExtResource("18_gg75w")
+metadata/_custom_type_script = "uid://2x5aqyeudj7a"
 
-[node name="boquet" parent="movable_objects" unique_id=1387670597 instance=ExtResource("18_sfnul")]
-position = Vector2(492, 527)
+[node name="bat_box" parent="movable_objects/ObjectAnchor" unique_id=1846462244 instance=ExtResource("17_l8eod")]
+position = Vector2(34, 692)
 
-[node name="rose_potted" parent="movable_objects" unique_id=713786230 instance=ExtResource("19_lolfx")]
-position = Vector2(610, 459)
+[node name="ObjectAnchor2" type="Node2D" parent="movable_objects" unique_id=579337092]
+script = ExtResource("18_gg75w")
+metadata/_custom_type_script = "uid://2x5aqyeudj7a"
 
-[node name="pumpkin" parent="movable_objects" unique_id=1222323557 instance=ExtResource("20_004to")]
-position = Vector2(716, 407)
+[node name="boquet" parent="movable_objects/ObjectAnchor2" unique_id=1387670597 instance=ExtResource("18_sfnul")]
+position = Vector2(107, 839)
 
-[node name="large_vine_2" parent="movable_objects" unique_id=1590799470 instance=ExtResource("21_e0v1o")]
-position = Vector2(526, 661)
+[node name="ObjectAnchor3" type="Node2D" parent="movable_objects" unique_id=1064848294]
+script = ExtResource("18_gg75w")
+metadata/_custom_type_script = "uid://2x5aqyeudj7a"
 
-[node name="large_vine" parent="movable_objects" unique_id=1316743030 instance=ExtResource("22_idth2")]
-position = Vector2(872, 310)
+[node name="rose_potted" parent="movable_objects/ObjectAnchor3" unique_id=713786230 instance=ExtResource("19_lolfx")]
+position = Vector2(91, 769)
 
-[node name="grave_6" parent="movable_objects" unique_id=1747088408 instance=ExtResource("23_gg75w")]
-position = Vector2(484, 385)
+[node name="ObjectAnchor4" type="Node2D" parent="movable_objects" unique_id=1889122732]
+script = ExtResource("18_gg75w")
+metadata/_custom_type_script = "uid://2x5aqyeudj7a"
 
-[node name="grave2" parent="movable_objects" unique_id=1758211441 instance=ExtResource("24_n1pyt")]
-position = Vector2(384, 439)
+[node name="pumpkin" parent="movable_objects/ObjectAnchor4" unique_id=1222323557 instance=ExtResource("20_004to")]
+position = Vector2(177, 780)
 
-[node name="skull" parent="movable_objects" unique_id=713697625 instance=ExtResource("26_idth2")]
-position = Vector2(813, 502)
+[node name="ObjectAnchor5" type="Node2D" parent="movable_objects" unique_id=1243401806]
+script = ExtResource("18_gg75w")
+metadata/_custom_type_script = "uid://2x5aqyeudj7a"
 
-[node name="pumpkin2" parent="movable_objects" unique_id=725054858 instance=ExtResource("27_gg75w")]
-position = Vector2(697, 413)
+[node name="large_vine_2" parent="movable_objects/ObjectAnchor5" unique_id=1590799470 instance=ExtResource("21_e0v1o")]
+position = Vector2(109, 687)
 
-[node name="pumpkin_busted" parent="movable_objects" unique_id=978206845 instance=ExtResource("28_n1pyt")]
-position = Vector2(701, 325)
+[node name="ObjectAnchor6" type="Node2D" parent="movable_objects" unique_id=588874678]
+script = ExtResource("18_gg75w")
+metadata/_custom_type_script = "uid://2x5aqyeudj7a"
+
+[node name="large_vine" parent="movable_objects/ObjectAnchor6" unique_id=1316743030 instance=ExtResource("22_idth2")]
+position = Vector2(210, 704)
+
+[node name="ObjectAnchor7" type="Node2D" parent="movable_objects" unique_id=447243207]
+script = ExtResource("18_gg75w")
+metadata/_custom_type_script = "uid://2x5aqyeudj7a"
+
+[node name="grave_6" parent="movable_objects/ObjectAnchor7" unique_id=1747088408 instance=ExtResource("23_gg75w")]
+position = Vector2(243, 749)
+
+[node name="ObjectAnchor8" type="Node2D" parent="movable_objects" unique_id=64519013]
+script = ExtResource("18_gg75w")
+metadata/_custom_type_script = "uid://2x5aqyeudj7a"
+
+[node name="grave2" parent="movable_objects/ObjectAnchor8" unique_id=1758211441 instance=ExtResource("24_n1pyt")]
+position = Vector2(38, 759)
+
+[node name="ObjectAnchor9" type="Node2D" parent="movable_objects" unique_id=184775697]
+script = ExtResource("18_gg75w")
+metadata/_custom_type_script = "uid://2x5aqyeudj7a"
+
+[node name="skull" parent="movable_objects/ObjectAnchor9" unique_id=713697625 instance=ExtResource("26_idth2")]
+position = Vector2(158, 800)
+
+[node name="ObjectAnchor10" type="Node2D" parent="movable_objects" unique_id=1487585950]
+script = ExtResource("18_gg75w")
+metadata/_custom_type_script = "uid://2x5aqyeudj7a"
+
+[node name="pumpkin2" parent="movable_objects/ObjectAnchor10" unique_id=725054858 instance=ExtResource("27_gg75w")]
+position = Vector2(168, 837)
+
+[node name="ObjectAnchor11" type="Node2D" parent="movable_objects" unique_id=783207293]
+script = ExtResource("18_gg75w")
+metadata/_custom_type_script = "uid://2x5aqyeudj7a"
+
+[node name="pumpkin_busted" parent="movable_objects/ObjectAnchor11" unique_id=978206845 instance=ExtResource("28_n1pyt")]
+position = Vector2(203, 817)
 
 [node name="lights" type="Node2D" parent="." unique_id=976434962]
+visible = false
 
 [node name="main_light" type="PointLight2D" parent="lights" unique_id=1176981952]
 position = Vector2(597, 442)

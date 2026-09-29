@@ -2,6 +2,41 @@
 
 [ext_resource type="Texture2D" uid="uid://chu6rlqxltni1" path="res://assets/sprites/misc/grass_bg.png" id="1_gfuhv"]
 [ext_resource type="Texture2D" uid="uid://dyj0c421hwn0o" path="res://assets/sprites/misc/light_texture.png" id="2_y2agi"]
+[ext_resource type="PackedScene" uid="uid://bkk8ndlgp1w2p" path="res://scenes/objects/design/deadflower.tscn" id="3_m5qie"]
+[ext_resource type="PackedScene" uid="uid://cro6na0qs6skv" path="res://scenes/objects/design/deadbush.tscn" id="4_kydov"]
+[ext_resource type="PackedScene" uid="uid://dg6iyfjfs2xv" path="res://scenes/objects/design/deadstick.tscn" id="5_uwlxl"]
+[ext_resource type="PackedScene" uid="uid://dt3e4louba76k" path="res://scenes/objects/design/dead_tree.tscn" id="6_4wfvb"]
+[ext_resource type="PackedScene" uid="uid://cscb5747e2tww" path="res://scenes/objects/design/pillar_broken.tscn" id="7_tqv5a"]
+[ext_resource type="PackedScene" uid="uid://r8wn6glcym0w" path="res://scenes/objects/design/fence_1.tscn" id="8_ppjov"]
+[ext_resource type="PackedScene" uid="uid://d4hkns38h66rr" path="res://scenes/objects/design/entrance.tscn" id="9_pafwe"]
+[ext_resource type="PackedScene" uid="uid://bwmjc754i17m3" path="res://scenes/objects/design/pumpkin_busted.tscn" id="10_cfbu6"]
+[ext_resource type="PackedScene" uid="uid://dpqwi0nihryta" path="res://scenes/objects/design/fence_2.tscn" id="10_gf2l7"]
+[ext_resource type="PackedScene" uid="uid://b1pudan3hxcux" path="res://scenes/objects/design/pumpkin_jack.tscn" id="11_bvftm"]
+[ext_resource type="PackedScene" uid="uid://dm6pivrtehf6y" path="res://scenes/objects/design/rose_potted.tscn" id="12_4fymt"]
+[ext_resource type="PackedScene" uid="uid://dne6hvs5t44u7" path="res://scenes/objects/design/vines_small.tscn" id="13_sb0xc"]
+[ext_resource type="PackedScene" uid="uid://bobyd66xm2vox" path="res://scenes/objects/design/pumpkin.tscn" id="14_uu8qo"]
+[ext_resource type="PackedScene" uid="uid://b6dchnsxgbm2t" path="res://scenes/objects/design/flower_1.tscn" id="15_3wtmn"]
+[ext_resource type="PackedScene" uid="uid://ckxrglikxrs5x" path="res://scenes/objects/design/flower_2.tscn" id="16_cbgmi"]
+[ext_resource type="PackedScene" uid="uid://wxk8ifdxaedi" path="res://scenes/objects/design/sunkn_rock_1.tscn" id="17_x5ghr"]
+[ext_resource type="PackedScene" uid="uid://cpllyuuoisfpe" path="res://scenes/objects/design/puddle_2.tscn" id="18_172fc"]
+[ext_resource type="Script" uid="uid://2x5aqyeudj7a" path="res://scripts/components/object_anchor.gd" id="19_u1jf6"]
+[ext_resource type="PackedScene" uid="uid://ty0yvocumcqh" path="res://scenes/objects/movable/statue_base.tscn" id="20_l04iu"]
+[ext_resource type="PackedScene" uid="uid://byb4git0d5h61" path="res://scenes/objects/movable/statue_covered.tscn" id="21_j0hcr"]
+[ext_resource type="PackedScene" uid="uid://bkxuf7hk8x426" path="res://scenes/objects/movable/statue_full.tscn" id="22_u1jf6"]
+[ext_resource type="PackedScene" uid="uid://b43niyipox44c" path="res://scenes/objects/movable/grave_2.tscn" id="23_hx0e5"]
+[ext_resource type="PackedScene" uid="uid://lxy2n3gyqfig" path="res://scenes/objects/movable/grave_3.tscn" id="24_l2n0k"]
+[ext_resource type="PackedScene" uid="uid://crmnps5gh6tcx" path="res://scenes/objects/movable/grave_4.tscn" id="25_6oggx"]
+[ext_resource type="PackedScene" uid="uid://cbvgyghhq6glq" path="res://scenes/objects/movable/grave_5.tscn" id="26_hfqfu"]
+[ext_resource type="PackedScene" uid="uid://bi5yu1iwkv041" path="res://scenes/objects/movable/grave_6.tscn" id="27_6omao"]
+[ext_resource type="PackedScene" uid="uid://bd1txsvstjp32" path="res://scenes/objects/movable/grave_8.tscn" id="28_3vumg"]
+[ext_resource type="PackedScene" uid="uid://dc8jqptwiklp6" path="res://scenes/objects/movable/skull.tscn" id="29_ndq4w"]
+[ext_resource type="PackedScene" uid="uid://fqxxp66cwn5k" path="res://scenes/objects/movable/large_vine_2.tscn" id="30_1uorh"]
+[ext_resource type="PackedScene" uid="uid://caswyi77qfjfn" path="res://scenes/objects/movable/pumpkin.tscn" id="31_1e6gv"]
+[ext_resource type="PackedScene" uid="uid://rxsiibq3wiwr" path="res://scenes/objects/movable/pumpkin_2.tscn" id="32_o6sba"]
+[ext_resource type="PackedScene" uid="uid://w05fcnbqkcli" path="res://scenes/objects/movable/pumpkin_busted.tscn" id="33_vh3ag"]
+[ext_resource type="PackedScene" uid="uid://cjej1bwq5m6hx" path="res://scenes/objects/movable/rose_potted.tscn" id="34_ip8n8"]
+[ext_resource type="PackedScene" uid="uid://cfndntvf87s3x" path="res://scenes/objects/movable/boquet.tscn" id="35_mmgag"]
+[ext_resource type="PackedScene" uid="uid://ds4v3foycg1ug" path="res://scenes/entities/firefly.tscn" id="36_j0hcr"]
 
 [node name="level_6" type="Node2D" unique_id=1534398508]
 
@@ -17,7 +52,249 @@ stretch_mode = 1
 
 [node name="design" type="Node2D" parent="." unique_id=345404842]
 
+[node name="Deadflower" parent="design" unique_id=654652627 instance=ExtResource("3_m5qie")]
+position = Vector2(100, 56)
+
+[node name="deadbush" parent="design" unique_id=643131952 instance=ExtResource("4_kydov")]
+position = Vector2(314, 88)
+
+[node name="deadbush2" parent="design" unique_id=351142450 instance=ExtResource("4_kydov")]
+position = Vector2(1001, 88)
+flip_h = true
+
+[node name="deadbush3" parent="design" unique_id=446386832 instance=ExtResource("4_kydov")]
+position = Vector2(696, 15)
+flip_h = true
+
+[node name="Deadstick" parent="design" unique_id=124838493 instance=ExtResource("5_uwlxl")]
+position = Vector2(59, 237)
+
+[node name="dead_tree" parent="design" unique_id=1121609886 instance=ExtResource("6_4wfvb")]
+position = Vector2(794, 19)
+
+[node name="pillar_broken2" parent="design" unique_id=1577973902 instance=ExtResource("7_tqv5a")]
+position = Vector2(612, 165)
+
+[node name="fence_2" parent="design" unique_id=38674026 instance=ExtResource("8_ppjov")]
+position = Vector2(562, 200)
+
+[node name="entrance" parent="design" unique_id=2053842019 instance=ExtResource("9_pafwe")]
+position = Vector2(456, 221)
+
+[node name="fence_3" parent="design" unique_id=1539590583 instance=ExtResource("10_gf2l7")]
+position = Vector2(344, 318)
+
+[node name="fence_1" parent="design" unique_id=1880579481 instance=ExtResource("8_ppjov")]
+position = Vector2(664, 580)
+
+[node name="fence_6" parent="design" unique_id=638919205 instance=ExtResource("8_ppjov")]
+position = Vector2(565, 578)
+flip_h = true
+
+[node name="pillar_broken" parent="design" unique_id=2006761730 instance=ExtResource("7_tqv5a")]
+position = Vector2(238, 377)
+
+[node name="pillar_broken3" parent="design" unique_id=1509134256 instance=ExtResource("7_tqv5a")]
+position = Vector2(614, 596)
+
+[node name="pillar_broken4" parent="design" unique_id=526238198 instance=ExtResource("7_tqv5a")]
+position = Vector2(1009, 405)
+
+[node name="fence_4" parent="design" unique_id=179381129 instance=ExtResource("10_gf2l7")]
+position = Vector2(952, 440)
+
+[node name="fence_5" parent="design" unique_id=1223072175 instance=ExtResource("10_gf2l7")]
+position = Vector2(289, 412)
+flip_h = true
+
+[node name="PumpkinBusted" parent="design" unique_id=669760403 instance=ExtResource("10_cfbu6")]
+position = Vector2(423, 322)
+
+[node name="PumpkinJack" parent="design" unique_id=1995594847 instance=ExtResource("11_bvftm")]
+position = Vector2(604, 229)
+
+[node name="RosePotted" parent="design" unique_id=82546543 instance=ExtResource("12_4fymt")]
+position = Vector2(918, 386)
+
+[node name="vines_small" parent="design" unique_id=396420708 instance=ExtResource("13_sb0xc")]
+position = Vector2(1065, 240)
+
+[node name="vines_small2" parent="design" unique_id=399766468 instance=ExtResource("13_sb0xc")]
+position = Vector2(185, 196)
+
+[node name="vines_small3" parent="design" unique_id=2041174853 instance=ExtResource("13_sb0xc")]
+position = Vector2(94, 435)
+
+[node name="vines_small4" parent="design" unique_id=1839994775 instance=ExtResource("13_sb0xc")]
+position = Vector2(1132, 750)
+
+[node name="PumpkinBusted2" parent="design" unique_id=1862472997 instance=ExtResource("10_cfbu6")]
+position = Vector2(76, 351)
+
+[node name="deadbush4" parent="design" unique_id=1331943398 instance=ExtResource("4_kydov")]
+position = Vector2(585, 787)
+
+[node name="deadbush5" parent="design" unique_id=1261974070 instance=ExtResource("4_kydov")]
+position = Vector2(1042, 600)
+
+[node name="Deadstick2" parent="design" unique_id=86253693 instance=ExtResource("5_uwlxl")]
+position = Vector2(995, 803)
+
+[node name="dead_tree2" parent="design" unique_id=228949812 instance=ExtResource("6_4wfvb")]
+position = Vector2(539, 798)
+flip_h = true
+
+[node name="pumpkin" parent="design" unique_id=1694028204 instance=ExtResource("14_uu8qo")]
+position = Vector2(1015, 462)
+
+[node name="flower_1" parent="design" unique_id=258693586 instance=ExtResource("15_3wtmn")]
+position = Vector2(134, 305)
+
+[node name="flower_2" parent="design" unique_id=603356837 instance=ExtResource("16_cbgmi")]
+position = Vector2(931, 774)
+
+[node name="SunknRock1" parent="design" unique_id=1274783770 instance=ExtResource("17_x5ghr")]
+position = Vector2(1173, 102)
+
+[node name="SunknRock2" parent="design" unique_id=393268351 instance=ExtResource("17_x5ghr")]
+position = Vector2(545, 50)
+
+[node name="deadbush6" parent="design" unique_id=258151323 instance=ExtResource("4_kydov")]
+position = Vector2(705, 640)
+flip_h = true
+
+[node name="Puddle2" parent="design" unique_id=1060693748 instance=ExtResource("18_172fc")]
+position = Vector2(1154, 430)
+
 [node name="movable_objects" type="Node2D" parent="." unique_id=574949647]
+
+[node name="ObjectAnchor" type="Node2D" parent="movable_objects" unique_id=1408086260]
+position = Vector2(653, 321)
+script = ExtResource("19_u1jf6")
+metadata/_custom_type_script = "uid://2x5aqyeudj7a"
+
+[node name="statue_base" parent="movable_objects/ObjectAnchor" unique_id=382195033 instance=ExtResource("20_l04iu")]
+position = Vector2(-376, 359)
+
+[node name="ObjectAnchor2" type="Node2D" parent="movable_objects" unique_id=186945801]
+position = Vector2(654, 221)
+script = ExtResource("19_u1jf6")
+metadata/_custom_type_script = "uid://2x5aqyeudj7a"
+
+[node name="statue_covered" parent="movable_objects/ObjectAnchor2" unique_id=1488849665 instance=ExtResource("21_j0hcr")]
+position = Vector2(-366, 493)
+
+[node name="ObjectAnchor3" type="Node2D" parent="movable_objects" unique_id=260409415]
+position = Vector2(445, 436)
+script = ExtResource("19_u1jf6")
+metadata/_custom_type_script = "uid://2x5aqyeudj7a"
+
+[node name="statue_full" parent="movable_objects/ObjectAnchor3" unique_id=71883435 instance=ExtResource("22_u1jf6")]
+position = Vector2(-346, 329)
+
+[node name="ObjectAnchor4" type="Node2D" parent="movable_objects" unique_id=373886382]
+position = Vector2(514, 444)
+script = ExtResource("19_u1jf6")
+metadata/_custom_type_script = "uid://2x5aqyeudj7a"
+
+[node name="grave2" parent="movable_objects/ObjectAnchor4" unique_id=1758211441 instance=ExtResource("23_hx0e5")]
+position = Vector2(-237, 346)
+
+[node name="ObjectAnchor5" type="Node2D" parent="movable_objects" unique_id=1950244425]
+position = Vector2(626, 393)
+script = ExtResource("19_u1jf6")
+metadata/_custom_type_script = "uid://2x5aqyeudj7a"
+
+[node name="grave3" parent="movable_objects/ObjectAnchor5" unique_id=1279586315 instance=ExtResource("24_l2n0k")]
+position = Vector2(-454, 444)
+
+[node name="ObjectAnchor6" type="Node2D" parent="movable_objects" unique_id=64611346]
+position = Vector2(722, 339)
+script = ExtResource("19_u1jf6")
+metadata/_custom_type_script = "uid://2x5aqyeudj7a"
+
+[node name="grave4" parent="movable_objects/ObjectAnchor6" unique_id=1932367831 instance=ExtResource("25_6oggx")]
+position = Vector2(-573, 305)
+
+[node name="ObjectAnchor7" type="Node2D" parent="movable_objects" unique_id=239896530]
+position = Vector2(640, 529)
+script = ExtResource("19_u1jf6")
+metadata/_custom_type_script = "uid://2x5aqyeudj7a"
+
+[node name="grave_5" parent="movable_objects/ObjectAnchor7" unique_id=656037030 instance=ExtResource("26_hfqfu")]
+position = Vector2(-447, 178)
+
+[node name="ObjectAnchor8" type="Node2D" parent="movable_objects" unique_id=1060617040]
+position = Vector2(735, 458)
+script = ExtResource("19_u1jf6")
+metadata/_custom_type_script = "uid://2x5aqyeudj7a"
+
+[node name="grave_6" parent="movable_objects/ObjectAnchor8" unique_id=1747088408 instance=ExtResource("27_6omao")]
+position = Vector2(-499, 380)
+
+[node name="ObjectAnchor9" type="Node2D" parent="movable_objects" unique_id=1167758044]
+position = Vector2(835, 403)
+script = ExtResource("19_u1jf6")
+metadata/_custom_type_script = "uid://2x5aqyeudj7a"
+
+[node name="grave_8" parent="movable_objects/ObjectAnchor9" unique_id=317493375 instance=ExtResource("28_3vumg")]
+position = Vector2(-535, 427)
+
+[node name="ObjectAnchor10" type="Node2D" parent="movable_objects" unique_id=807455986]
+position = Vector2(875, 460)
+script = ExtResource("19_u1jf6")
+metadata/_custom_type_script = "uid://2x5aqyeudj7a"
+
+[node name="skull" parent="movable_objects/ObjectAnchor10" unique_id=713697625 instance=ExtResource("29_ndq4w")]
+position = Vector2(-747, 366)
+
+[node name="ObjectAnchor11" type="Node2D" parent="movable_objects" unique_id=1957445402]
+position = Vector2(810, 348)
+script = ExtResource("19_u1jf6")
+metadata/_custom_type_script = "uid://2x5aqyeudj7a"
+
+[node name="large_vine_2" parent="movable_objects/ObjectAnchor11" unique_id=1590799470 instance=ExtResource("30_1uorh")]
+position = Vector2(-618, 249)
+
+[node name="ObjectAnchor12" type="Node2D" parent="movable_objects" unique_id=618507847]
+position = Vector2(347, 390)
+script = ExtResource("19_u1jf6")
+metadata/_custom_type_script = "uid://2x5aqyeudj7a"
+
+[node name="pumpkin" parent="movable_objects/ObjectAnchor12" unique_id=1222323557 instance=ExtResource("31_1e6gv")]
+position = Vector2(-118, 374)
+
+[node name="ObjectAnchor13" type="Node2D" parent="movable_objects" unique_id=513936673]
+position = Vector2(360, 396)
+script = ExtResource("19_u1jf6")
+metadata/_custom_type_script = "uid://2x5aqyeudj7a"
+
+[node name="pumpkin2" parent="movable_objects/ObjectAnchor13" unique_id=725054858 instance=ExtResource("32_o6sba")]
+position = Vector2(-156, 373)
+
+[node name="ObjectAnchor14" type="Node2D" parent="movable_objects" unique_id=2060612502]
+position = Vector2(540, 277)
+script = ExtResource("19_u1jf6")
+metadata/_custom_type_script = "uid://2x5aqyeudj7a"
+
+[node name="pumpkin_busted" parent="movable_objects/ObjectAnchor14" unique_id=978206845 instance=ExtResource("33_vh3ag")]
+position = Vector2(-391, 512)
+
+[node name="ObjectAnchor15" type="Node2D" parent="movable_objects" unique_id=258988856]
+position = Vector2(541, 466)
+script = ExtResource("19_u1jf6")
+metadata/_custom_type_script = "uid://2x5aqyeudj7a"
+
+[node name="rose_potted" parent="movable_objects/ObjectAnchor15" unique_id=713786230 instance=ExtResource("34_ip8n8")]
+position = Vector2(-222, 288)
+
+[node name="ObjectAnchor16" type="Node2D" parent="movable_objects" unique_id=485244498]
+position = Vector2(770, 491)
+script = ExtResource("19_u1jf6")
+metadata/_custom_type_script = "uid://2x5aqyeudj7a"
+
+[node name="boquet" parent="movable_objects/ObjectAnchor16" unique_id=1387670597 instance=ExtResource("35_mmgag")]
+position = Vector2(-686, 332)
 
 [node name="lights" type="Node2D" parent="." unique_id=1930544699]
 
@@ -32,3 +309,15 @@ texture_scale = 3.9
 position = Vector2(116, 732)
 texture = ExtResource("2_y2agi")
 texture_scale = 1.9
+
+[node name="firefly" parent="lights" unique_id=1158227695 instance=ExtResource("36_j0hcr")]
+position = Vector2(112, 283)
+
+[node name="firefly2" parent="lights" unique_id=335764231 instance=ExtResource("36_j0hcr")]
+position = Vector2(757, 7)
+
+[node name="firefly3" parent="lights" unique_id=1204151346 instance=ExtResource("36_j0hcr")]
+position = Vector2(939, 774)
+
+[node name="firefly4" parent="lights" unique_id=1237716383 instance=ExtResource("36_j0hcr")]
+position = Vector2(925, 475)

@@ -1,6 +1,8 @@
 extends Node2D
 
 @onready var level_container: Node2D = $level_container
+@onready var tutorial: Control = $CanvasLayer/tutorial
+@onready var end_screen: Control = $CanvasLayer/end_screen
 
 const PERFECT_DIST: float = 12.0
 const MAX_DIST: float = 120.0 
@@ -9,15 +11,20 @@ var submitted: bool = false
 
 func _ready() -> void:
 	load_level()
+	
+	if GameManager.level == 1:
+		tutorial.show()
 
 func next_level() -> void:
-	pass
+	GameManager.level += 1
 
 func menu() -> void:
 	pass
 
 func retry() -> void:
 	pass
+
+
 
 func load_level() -> void:
 	var level: Node2D = load(Registry.levels[GameManager.level - 1]).instantiate()
@@ -38,7 +45,7 @@ func submit_layout() -> void:
 		total_score += score_object(anchor, object)
 	
 	var final_score: float = total_score / max(anchors.size(), 1)
-	
+	print(final_score)
 	# open end screen
 	# set score
 	
