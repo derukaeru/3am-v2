@@ -37,10 +37,10 @@
 [node name="level_2" type="Node2D" unique_id=6924211]
 
 [node name="background" type="TextureRect" parent="." unique_id=1983660872]
-offset_left = -126.0
-offset_top = -97.0
-offset_right = 3012.0
-offset_bottom = 2071.0
+offset_left = -518.0
+offset_top = -144.0
+offset_right = 3404.0
+offset_bottom = 2118.0
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("1_j2425")
 expand_mode = 1

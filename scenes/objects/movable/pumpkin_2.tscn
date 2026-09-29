@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://rxsiibq3wiwr"]
+
+[ext_resource type="Script" uid="uid://c8k0h4nw5u5ap" path="res://scripts/components/draggable_component.gd" id="1_8p5or"]
+[ext_resource type="Texture2D" uid="uid://bqtbar50tmq07" path="res://assets/sprites/nature/pumpkin6.png" id="2_t13ts"]
+
+[node name="pumpkin2" type="Area2D" unique_id=725054858]
+script = ExtResource("1_8p5or")
+metadata/_custom_type_script = "uid://c8k0h4nw5u5ap"
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=1891817745]
+polygon = PackedVector2Array(-15, -26, -19, -16, -17, -7, -8, -3, 0, 0, 11, -5, 17, -9, 18, -21, 12, -26, 3, -31, -8, -31)
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1847491531]
+position = Vector2(0, -17)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_t13ts")

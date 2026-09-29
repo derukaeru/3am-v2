@@ -2,14 +2,42 @@
 
 [ext_resource type="Texture2D" uid="uid://chu6rlqxltni1" path="res://assets/sprites/misc/grass_bg.png" id="1_r1vs7"]
 [ext_resource type="Texture2D" uid="uid://dyj0c421hwn0o" path="res://assets/sprites/misc/light_texture.png" id="2_845dy"]
+[ext_resource type="PackedScene" uid="uid://r8wn6glcym0w" path="res://scenes/objects/design/fence_1.tscn" id="2_hldbq"]
+[ext_resource type="PackedScene" uid="uid://cscb5747e2tww" path="res://scenes/objects/design/pillar_broken.tscn" id="3_fsnos"]
+[ext_resource type="PackedScene" uid="uid://dtmasu1fri2h5" path="res://scenes/objects/design/gravehole.tscn" id="3_gruok"]
+[ext_resource type="PackedScene" uid="uid://d4hkns38h66rr" path="res://scenes/objects/design/entrance.tscn" id="4_mxx4w"]
+[ext_resource type="PackedScene" uid="uid://dpqwi0nihryta" path="res://scenes/objects/design/fence_2.tscn" id="5_vvoq0"]
+[ext_resource type="PackedScene" uid="uid://dt3e4louba76k" path="res://scenes/objects/design/dead_tree.tscn" id="6_fsnos"]
+[ext_resource type="PackedScene" uid="uid://cro6na0qs6skv" path="res://scenes/objects/design/deadbush.tscn" id="7_mxx4w"]
+[ext_resource type="PackedScene" uid="uid://bwmjc754i17m3" path="res://scenes/objects/design/pumpkin_busted.tscn" id="8_dwyms"]
+[ext_resource type="PackedScene" uid="uid://bxcw3cfoluy75" path="res://scenes/objects/design/step_stone_3.tscn" id="9_6xwso"]
+[ext_resource type="PackedScene" uid="uid://dne6hvs5t44u7" path="res://scenes/objects/design/vines_small.tscn" id="10_5ke18"]
+[ext_resource type="PackedScene" uid="uid://bkk8ndlgp1w2p" path="res://scenes/objects/design/deadflower.tscn" id="11_j14br"]
+[ext_resource type="PackedScene" uid="uid://dg6iyfjfs2xv" path="res://scenes/objects/design/deadstick.tscn" id="12_0y7y4"]
+[ext_resource type="PackedScene" uid="uid://lrp5fg8t4qxi" path="res://scenes/objects/design/dirtpatch_small.tscn" id="13_gruok"]
+[ext_resource type="PackedScene" uid="uid://ckxrglikxrs5x" path="res://scenes/objects/design/flower_2.tscn" id="15_h717f"]
+[ext_resource type="PackedScene" uid="uid://7aeoc7n5j2mb" path="res://scenes/objects/design/gravedirt.tscn" id="16_3j2bn"]
+[ext_resource type="PackedScene" uid="uid://3n8fssadrrr5" path="res://scenes/objects/movable/bat_box.tscn" id="17_l8eod"]
+[ext_resource type="PackedScene" uid="uid://cfndntvf87s3x" path="res://scenes/objects/movable/boquet.tscn" id="18_sfnul"]
+[ext_resource type="PackedScene" uid="uid://cjej1bwq5m6hx" path="res://scenes/objects/movable/rose_potted.tscn" id="19_lolfx"]
+[ext_resource type="PackedScene" uid="uid://caswyi77qfjfn" path="res://scenes/objects/movable/pumpkin.tscn" id="20_004to"]
+[ext_resource type="PackedScene" uid="uid://fqxxp66cwn5k" path="res://scenes/objects/movable/large_vine_2.tscn" id="21_e0v1o"]
+[ext_resource type="PackedScene" uid="uid://dpq1sutw013eb" path="res://scenes/objects/movable/large_vine.tscn" id="22_idth2"]
+[ext_resource type="PackedScene" uid="uid://bi5yu1iwkv041" path="res://scenes/objects/movable/grave_6.tscn" id="23_gg75w"]
+[ext_resource type="PackedScene" uid="uid://b43niyipox44c" path="res://scenes/objects/movable/grave_2.tscn" id="24_n1pyt"]
+[ext_resource type="PackedScene" uid="uid://b1pudan3hxcux" path="res://scenes/objects/design/pumpkin_jack.tscn" id="25_t4lb3"]
+[ext_resource type="PackedScene" uid="uid://dc8jqptwiklp6" path="res://scenes/objects/movable/skull.tscn" id="26_idth2"]
+[ext_resource type="PackedScene" uid="uid://rxsiibq3wiwr" path="res://scenes/objects/movable/pumpkin_2.tscn" id="27_gg75w"]
+[ext_resource type="PackedScene" uid="uid://w05fcnbqkcli" path="res://scenes/objects/movable/pumpkin_busted.tscn" id="28_n1pyt"]
+[ext_resource type="PackedScene" uid="uid://ds4v3foycg1ug" path="res://scenes/entities/firefly.tscn" id="30_t4lb3"]
 
 [node name="level_5" type="Node2D" unique_id=1103402420]
 
 [node name="background" type="TextureRect" parent="." unique_id=1509979292]
-offset_left = -126.0
-offset_top = -97.0
-offset_right = 3012.0
-offset_bottom = 2071.0
+offset_left = -276.0
+offset_top = -497.0
+offset_right = 3162.0
+offset_bottom = 2471.0
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("1_r1vs7")
 expand_mode = 1
@@ -17,7 +45,189 @@ stretch_mode = 1
 
 [node name="design" type="Node2D" parent="." unique_id=2025724889]
 
+[node name="fence_1" parent="design" unique_id=38674026 instance=ExtResource("2_hldbq")]
+position = Vector2(647, 597)
+
+[node name="fence_4" parent="design" unique_id=962770656 instance=ExtResource("2_hldbq")]
+position = Vector2(290, 408)
+
+[node name="gravehole5" parent="design" unique_id=1753305487 instance=ExtResource("3_gruok")]
+position = Vector2(574.5, 553)
+
+[node name="gravehole6" parent="design" unique_id=116111066 instance=ExtResource("3_gruok")]
+position = Vector2(682, 494)
+
+[node name="gravehole7" parent="design" unique_id=1298391639 instance=ExtResource("3_gruok")]
+position = Vector2(784, 428)
+
+[node name="gravehole8" parent="design" unique_id=608655450 instance=ExtResource("3_gruok")]
+position = Vector2(879, 370)
+
+[node name="pillar_broken" parent="design" unique_id=1577973902 instance=ExtResource("3_fsnos")]
+position = Vector2(591, 621)
+
+[node name="pillar_broken2" parent="design" unique_id=1567691986 instance=ExtResource("3_fsnos")]
+position = Vector2(248, 424)
+
+[node name="pillar_broken3" parent="design" unique_id=1297634784 instance=ExtResource("3_fsnos")]
+position = Vector2(737, 149.5)
+
+[node name="fence_7" parent="design" unique_id=194585019 instance=ExtResource("2_hldbq")]
+position = Vector2(293, 456)
+flip_h = true
+
+[node name="fence_5" parent="design" unique_id=654596732 instance=ExtResource("2_hldbq")]
+position = Vector2(785, 187)
+flip_h = true
+
+[node name="fence_6" parent="design" unique_id=735527961 instance=ExtResource("2_hldbq")]
+position = Vector2(1005, 323)
+flip_h = true
+
+[node name="pillar_broken4" parent="design" unique_id=897169128 instance=ExtResource("3_fsnos")]
+position = Vector2(1054, 344)
+
+[node name="entrance" parent="design" unique_id=2053842019 instance=ExtResource("4_mxx4w")]
+position = Vector2(816, 466)
+
+[node name="fence_2" parent="design" unique_id=1539590583 instance=ExtResource("5_vvoq0")]
+position = Vector2(682, 182)
+
+[node name="fence_3" parent="design" unique_id=166317391 instance=ExtResource("5_vvoq0")]
+position = Vector2(1000, 379)
+
+[node name="dead_tree" parent="design" unique_id=1121609886 instance=ExtResource("6_fsnos")]
+position = Vector2(459, 94)
+
+[node name="dead_tree2" parent="design" unique_id=1644678835 instance=ExtResource("6_fsnos")]
+position = Vector2(847, 757)
+flip_h = true
+
+[node name="dead_tree3" parent="design" unique_id=1183066593 instance=ExtResource("6_fsnos")]
+position = Vector2(19, 544)
+
+[node name="deadbush" parent="design" unique_id=643131952 instance=ExtResource("7_mxx4w")]
+position = Vector2(122, 251)
+
+[node name="deadbush2" parent="design" unique_id=338346278 instance=ExtResource("7_mxx4w")]
+position = Vector2(1198, 410)
+flip_h = true
+
+[node name="deadbush3" parent="design" unique_id=1155453295 instance=ExtResource("7_mxx4w")]
+position = Vector2(903, 485)
+flip_h = true
+
+[node name="PumpkinBusted" parent="design" unique_id=669760403 instance=ExtResource("8_dwyms")]
+position = Vector2(575, 665)
+
+[node name="StepStone3" parent="design" unique_id=1734438859 instance=ExtResource("9_6xwso")]
+position = Vector2(1119, 684)
+
+[node name="StepStone4" parent="design" unique_id=223668939 instance=ExtResource("9_6xwso")]
+position = Vector2(981, 642)
+
+[node name="vines_small" parent="design" unique_id=396420708 instance=ExtResource("10_5ke18")]
+position = Vector2(1159, 117)
+
+[node name="vines_small2" parent="design" unique_id=659512432 instance=ExtResource("10_5ke18")]
+position = Vector2(1109, 156)
+flip_h = true
+
+[node name="vines_small3" parent="design" unique_id=889284365 instance=ExtResource("10_5ke18")]
+position = Vector2(217, 126)
+flip_h = true
+
+[node name="vines_small4" parent="design" unique_id=398464161 instance=ExtResource("10_5ke18")]
+position = Vector2(401, 846)
+flip_h = true
+
+[node name="vines_small5" parent="design" unique_id=898493223 instance=ExtResource("10_5ke18")]
+position = Vector2(290, 617)
+flip_h = true
+
+[node name="Deadflower" parent="design" unique_id=654652627 instance=ExtResource("11_j14br")]
+position = Vector2(95, 735)
+
+[node name="Deadflower2" parent="design" unique_id=1981959234 instance=ExtResource("11_j14br")]
+position = Vector2(1016, 818)
+
+[node name="Deadflower3" parent="design" unique_id=639948268 instance=ExtResource("11_j14br")]
+position = Vector2(48, 106)
+
+[node name="Deadstick" parent="design" unique_id=124838493 instance=ExtResource("12_0y7y4")]
+position = Vector2(601, 480)
+
+[node name="Deadstick2" parent="design" unique_id=900669239 instance=ExtResource("12_0y7y4")]
+position = Vector2(1081, 561)
+
+[node name="dirtpatch_small" parent="design" unique_id=1748520992 instance=ExtResource("13_gruok")]
+position = Vector2(53, 807)
+
+[node name="dirtpatch_small2" parent="design" unique_id=656673932 instance=ExtResource("13_gruok")]
+position = Vector2(605, 233)
+
+[node name="dirtpatch_small3" parent="design" unique_id=664742195 instance=ExtResource("13_gruok")]
+position = Vector2(1183, 792)
+
+[node name="gravehole3" parent="design" unique_id=99964432 instance=ExtResource("3_gruok")]
+position = Vector2(649, 335)
+
+[node name="gravehole4" parent="design" unique_id=1396974408 instance=ExtResource("3_gruok")]
+position = Vector2(744, 277)
+
+[node name="flower_2" parent="design" unique_id=603356837 instance=ExtResource("15_h717f")]
+position = Vector2(761, 318)
+
+[node name="gravedirt" parent="design" unique_id=379819194 instance=ExtResource("16_3j2bn")]
+position = Vector2(434, 463)
+
+[node name="gravedirt2" parent="design" unique_id=1667510397 instance=ExtResource("16_3j2bn")]
+position = Vector2(551, 404)
+
+[node name="entrance2" parent="design" unique_id=100696630 instance=ExtResource("4_mxx4w")]
+position = Vector2(508, 250)
+
+[node name="PumpkinJack" parent="design" unique_id=1995594847 instance=ExtResource("25_t4lb3")]
+position = Vector2(663, 236)
+
+[node name="PumpkinJack2" parent="design" unique_id=1663173322 instance=ExtResource("25_t4lb3")]
+position = Vector2(972, 331)
+flip_h = true
+
 [node name="movable_objects" type="Node2D" parent="." unique_id=1522555816]
+
+[node name="bat_box" parent="movable_objects" unique_id=1846462244 instance=ExtResource("17_l8eod")]
+position = Vector2(346, 454)
+
+[node name="boquet" parent="movable_objects" unique_id=1387670597 instance=ExtResource("18_sfnul")]
+position = Vector2(492, 527)
+
+[node name="rose_potted" parent="movable_objects" unique_id=713786230 instance=ExtResource("19_lolfx")]
+position = Vector2(610, 459)
+
+[node name="pumpkin" parent="movable_objects" unique_id=1222323557 instance=ExtResource("20_004to")]
+position = Vector2(716, 407)
+
+[node name="large_vine_2" parent="movable_objects" unique_id=1590799470 instance=ExtResource("21_e0v1o")]
+position = Vector2(526, 661)
+
+[node name="large_vine" parent="movable_objects" unique_id=1316743030 instance=ExtResource("22_idth2")]
+position = Vector2(872, 310)
+
+[node name="grave_6" parent="movable_objects" unique_id=1747088408 instance=ExtResource("23_gg75w")]
+position = Vector2(484, 385)
+
+[node name="grave2" parent="movable_objects" unique_id=1758211441 instance=ExtResource("24_n1pyt")]
+position = Vector2(384, 439)
+
+[node name="skull" parent="movable_objects" unique_id=713697625 instance=ExtResource("26_idth2")]
+position = Vector2(813, 502)
+
+[node name="pumpkin2" parent="movable_objects" unique_id=725054858 instance=ExtResource("27_gg75w")]
+position = Vector2(697, 413)
+
+[node name="pumpkin_busted" parent="movable_objects" unique_id=978206845 instance=ExtResource("28_n1pyt")]
+position = Vector2(701, 325)
 
 [node name="lights" type="Node2D" parent="." unique_id=976434962]
 
@@ -32,3 +242,15 @@ texture_scale = 3.9
 position = Vector2(116, 732)
 texture = ExtResource("2_845dy")
 texture_scale = 1.9
+
+[node name="firefly" parent="lights" unique_id=1158227695 instance=ExtResource("30_t4lb3")]
+position = Vector2(331, 86)
+
+[node name="firefly2" parent="lights" unique_id=873550840 instance=ExtResource("30_t4lb3")]
+position = Vector2(894, 762)
+
+[node name="firefly3" parent="lights" unique_id=527163910 instance=ExtResource("30_t4lb3")]
+position = Vector2(1190, 226)
+
+[node name="firefly4" parent="lights" unique_id=865484429 instance=ExtResource("30_t4lb3")]
+position = Vector2(118, 267)

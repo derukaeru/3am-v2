@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://w05fcnbqkcli"]
+
+[ext_resource type="Script" uid="uid://c8k0h4nw5u5ap" path="res://scripts/components/draggable_component.gd" id="1_2cxvr"]
+[ext_resource type="Texture2D" uid="uid://nd0m74r7pe2f" path="res://assets/sprites/nature/pumpkin_busted.png" id="2_f0dhv"]
+
+[node name="pumpkin_busted" type="Area2D" unique_id=978206845]
+script = ExtResource("1_2cxvr")
+metadata/_custom_type_script = "uid://c8k0h4nw5u5ap"
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=739034617]
+polygon = PackedVector2Array(-20, -18, -12, -10, 8, -13, 23, -28, 6, -39, -16, -41)
+
+[node name="PumpkinBusted" type="Sprite2D" parent="." unique_id=1909228745]
+position = Vector2(0, -25)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_f0dhv")

@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://dc8jqptwiklp6"]
+
+[ext_resource type="Script" uid="uid://c8k0h4nw5u5ap" path="res://scripts/components/draggable_component.gd" id="1_vyk0t"]
+[ext_resource type="Texture2D" uid="uid://dkbjel6gjayr4" path="res://assets/sprites/nature/skull.png" id="2_6vrj2"]
+
+[node name="skull" type="Area2D" unique_id=713697625]
+script = ExtResource("1_vyk0t")
+metadata/_custom_type_script = "uid://c8k0h4nw5u5ap"
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=1007149962]
+polygon = PackedVector2Array(-8, -20, -11, -15, -9, -8, 0, -6, 0, -4, 8, -4, 12, -9, 10, -17, 2, -24, -5, -24)
+
+[node name="Skull" type="Sprite2D" parent="." unique_id=2046612807]
+position = Vector2(0, -13)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_6vrj2")

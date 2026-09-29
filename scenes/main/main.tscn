@@ -20,6 +20,7 @@ position = Vector2(640, 428)
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1285847559]
 
 [node name="submit" type="Button" parent="CanvasLayer" unique_id=772302600]
+visible = false
 anchors_preset = 7
 anchor_left = 0.5
 anchor_top = 1.0

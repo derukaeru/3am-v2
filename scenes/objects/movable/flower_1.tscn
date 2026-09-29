@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://daw7511dmsuv7"]
+
+[ext_resource type="Script" uid="uid://c8k0h4nw5u5ap" path="res://scripts/components/draggable_component.gd" id="1_7w8f1"]
+[ext_resource type="Texture2D" uid="uid://bjkfyra6yf16m" path="res://assets/sprites/nature/Flower1.png" id="2_pjehs"]
+
+[node name="flower_1" type="Area2D" unique_id=1629608864]
+script = ExtResource("1_7w8f1")
+metadata/_custom_type_script = "uid://c8k0h4nw5u5ap"
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=1937168592]
+polygon = PackedVector2Array(-13, -80, -24, -31, -9, 1, 28, -46, 13, -79, 0, -90)
+
+[node name="Flower1" type="Sprite2D" parent="." unique_id=1294841510]
+position = Vector2(0, -38)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_pjehs")
