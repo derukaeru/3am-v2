@@ -24,6 +24,7 @@
 [ext_resource type="Texture2D" uid="uid://hf6j6y4j4plf" path="res://assets/sprites/nature/deadbush.png" id="21_8tbq5"]
 [ext_resource type="Texture2D" uid="uid://4y0nomxq3ftu" path="res://assets/sprites/nature/pumpkin2.png" id="22_tfqnh"]
 [ext_resource type="Texture2D" uid="uid://dkbjel6gjayr4" path="res://assets/sprites/nature/skull.png" id="23_txacc"]
+[ext_resource type="PackedScene" uid="uid://ds4v3foycg1ug" path="res://scenes/entities/firefly.tscn" id="24_pddr3"]
 [ext_resource type="Texture2D" uid="uid://dyj0c421hwn0o" path="res://assets/sprites/misc/light_texture.png" id="25_0rory"]
 [ext_resource type="PackedScene" uid="uid://bdwwmuep6qohb" path="res://scenes/menu/level_select_screen.tscn" id="25_lo53v"]
 
@@ -267,6 +268,15 @@ position = Vector2(901, 243)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("23_txacc")
 flip_h = true
+
+[node name="firefly" parent="objects" unique_id=1158227695 instance=ExtResource("24_pddr3")]
+position = Vector2(177, 296)
+
+[node name="firefly2" parent="objects" unique_id=120075723 instance=ExtResource("24_pddr3")]
+position = Vector2(891, 594)
+
+[node name="firefly3" parent="objects" unique_id=1050462295 instance=ExtResource("24_pddr3")]
+position = Vector2(870, 208)
 
 [node name="menu" type="VBoxContainer" parent="." unique_id=1457206500]
 layout_mode = 1

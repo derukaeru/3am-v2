@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://b6iiso164bnv6"]
 
+[ext_resource type="Script" uid="uid://beq5bauv3v3wg" path="res://scenes/menu/settings_screen.gd" id="1_5xb6v"]
+
 [node name="settings_screen" type="Control" unique_id=237862792]
 layout_mode = 3
 anchor_left = 0.083000004
@@ -11,6 +13,7 @@ offset_right = -0.25604248
 offset_bottom = -0.06402588
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_5xb6v")
 
 [node name="background" type="ColorRect" parent="." unique_id=1941057918]
 layout_mode = 1
@@ -20,3 +23,18 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.06469653, 0.06469653, 0.06469653, 1)
+
+[node name="exit" type="Button" parent="." unique_id=925105708]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -172.5039
+offset_top = 20.0
+offset_right = -22.503906
+offset_bottom = 87.0
+grow_horizontal = 0
+theme_override_font_sizes/font_size = 40
+text = "exit"
+
+[connection signal="pressed" from="exit" to="." method="exit"]

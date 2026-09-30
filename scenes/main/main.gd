@@ -1,11 +1,25 @@
 extends Node2D
 
+@onready var submit_button: Button = $CanvasLayer/submit
 @onready var level_container: Node2D = $level_container
 @onready var tutorial: Control = $CanvasLayer/tutorial
+
 @onready var end_screen: Control = $CanvasLayer/end_screen
 @onready var end_screen_animation: AnimationPlayer = $CanvasLayer/end_screen/AnimationPlayer
+
 @onready var photograph: Control = $CanvasLayer/photograph
 @onready var photograph_animation: AnimationPlayer = $CanvasLayer/photograph/AnimationPlayer
+@onready var timer_label: Label = $CanvasLayer/photograph/background/timer
+@onready var photo: TextureRect = $CanvasLayer/photograph/background/photo
+
+@onready var photo_timer: Timer = $CanvasLayer/photograph/photo_timer
+@onready var next_button: Button = $CanvasLayer/end_screen/next_level
+
+@onready var end_image: TextureRect = $CanvasLayer/end_screen/photo/image
+@onready var end_photo: ColorRect = $CanvasLayer/end_screen/photo
+
+@onready var menu_button: Button = $CanvasLayer/end_screen/menu
+@onready var retry_button: Button = $CanvasLayer/end_screen/retry
 
 const PERFECT_DIST: float = 12.0
 const MAX_DIST: float = 120.0 
@@ -18,6 +32,7 @@ func _ready() -> void:
 		tutorial.show()
 	else:
 		tutorial.hide() 
+		show_photograph()
 
 func next_level() -> void:
 	GameManager.level += 1
@@ -46,12 +61,17 @@ func submit_layout() -> void:
 		var object: Node2D = anchor.object
 		total_score += score_object(anchor, object)
 	
-	var final_score: float = total_score / max(anchors.size(), 1)
-	print(final_score)
-	# open end screen
-	# set score
+	var final_score: int = int((total_score / max(anchors.size(), 1)) * 100)
+	submit_button.hide()
 	
-	# check if unlocked next level or not based on score
+	end_image.texture = load(Registry.UID["level_%d" % GameManager.level])
+	end_screen.show()
+	end_screen_animation.play("open")
+	await end_screen_animation.animation_finished
+	
+	if final_score >= 75 and GameManager.level < 6:
+		GameManager.locked_levels[GameManager.level + 1] = false
+		next_button.show()
 
 func score_object(anchor: Node2D, object: Node2D) -> float:
 	var dist := object.global_position.distance_to(anchor.global_position)
@@ -61,11 +81,20 @@ func score_object(anchor: Node2D, object: Node2D) -> float:
 
 func tutorial_continue() -> void:
 	tutorial.hide()
+	show_photograph()
 
 func show_photograph() -> void:
-	# change photo here
+	photo.texture = load(Registry.UID["level_%d" % GameManager.level])
 	
 	photograph.show()
-	photograph_animation.play("open")
+	photograph_animation.play("show")
+	await photograph_animation.animation_finished
+	photo_timer.start()
+	await photo_timer.timeout
+	photograph_animation.play_backwards("show")
 	await photograph_animation.animation_finished
 	photograph.hide()
+
+func _process(_delta: float) -> void:
+	if not photo_timer.is_stopped():
+		timer_label.text = str(int(photo_timer.time_left)) + " secs"
