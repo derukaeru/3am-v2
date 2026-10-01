@@ -11,6 +11,8 @@ extends Node2D
 @onready var photograph_animation: AnimationPlayer = $CanvasLayer/photograph/AnimationPlayer
 @onready var timer_label: Label = $CanvasLayer/photograph/background/timer
 @onready var photo: TextureRect = $CanvasLayer/photograph/background/photo
+@onready var score_label: Label = $CanvasLayer/end_screen/score
+@onready var level_label: Label = $CanvasLayer/end_screen/level
 
 @onready var photo_timer: Timer = $CanvasLayer/photograph/photo_timer
 @onready var next_button: Button = $CanvasLayer/end_screen/next_level
@@ -21,7 +23,7 @@ extends Node2D
 @onready var menu_button: Button = $CanvasLayer/end_screen/menu
 @onready var retry_button: Button = $CanvasLayer/end_screen/retry
 
-const PERFECT_DIST: float = 12.0
+const PERFECT_DIST: float = 20.0
 const MAX_DIST: float = 120.0 
 var submitted: bool = false
 
@@ -36,12 +38,13 @@ func _ready() -> void:
 
 func next_level() -> void:
 	GameManager.level += 1
+	SceneChanger.change_scene("main")
 
 func menu() -> void:
 	pass
 
 func retry() -> void:
-	pass
+	SceneChanger.change_scene("main")
 
 func load_level() -> void:
 	var level: Node2D = load(Registry.levels[GameManager.level - 1]).instantiate()
@@ -67,6 +70,10 @@ func submit_layout() -> void:
 	end_image.texture = load(Registry.UID["level_%d" % GameManager.level])
 	end_screen.show()
 	end_screen_animation.play("open")
+	level_label.text = "LEVEL " + str(GameManager.level)
+	
+	score_label.text = "Accuracy: " + str(final_score) + "%" 
+	
 	await end_screen_animation.animation_finished
 	
 	if final_score >= 75 and GameManager.level < 6:

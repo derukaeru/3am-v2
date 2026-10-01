@@ -31,8 +31,8 @@
 [ext_resource type="PackedScene" uid="uid://bd1txsvstjp32" path="res://scenes/objects/movable/grave_8.tscn" id="27_oftal"]
 [ext_resource type="PackedScene" uid="uid://lxy2n3gyqfig" path="res://scenes/objects/movable/grave_3.tscn" id="28_fqy8p"]
 [ext_resource type="PackedScene" uid="uid://bkxuf7hk8x426" path="res://scenes/objects/movable/statue_full.tscn" id="29_s7kn7"]
+[ext_resource type="PackedScene" uid="uid://cjej1bwq5m6hx" path="res://scenes/objects/movable/rose_potted.tscn" id="31_joiyc"]
 [ext_resource type="PackedScene" uid="uid://ds4v3foycg1ug" path="res://scenes/entities/firefly.tscn" id="31_rvwo1"]
-[ext_resource type="PackedScene" uid="uid://caswyi77qfjfn" path="res://scenes/objects/movable/pumpkin.tscn" id="31_wwjag"]
 
 [node name="level_2" type="Node2D" unique_id=6924211]
 
@@ -297,22 +297,15 @@ script = ExtResource("25_yxkvy")
 metadata/_custom_type_script = "uid://2x5aqyeudj7a"
 
 [node name="statue_full" parent="movable_objects/ObjectAnchor5" unique_id=71883435 instance=ExtResource("29_s7kn7")]
-position = Vector2(-380, 164)
+position = Vector2(-354, 277)
 
 [node name="ObjectAnchor6" type="Node2D" parent="movable_objects" unique_id=2130135281]
-position = Vector2(760, 273)
+position = Vector2(733, 319)
 script = ExtResource("25_yxkvy")
 metadata/_custom_type_script = "uid://2x5aqyeudj7a"
 
-[node name="RosePotted" parent="movable_objects/ObjectAnchor6" unique_id=678003971 instance=ExtResource("11_wikm6")]
-position = Vector2(-672, 498)
-
-[node name="ObjectAnchor7" type="Node2D" parent="movable_objects" unique_id=302265478]
-script = ExtResource("25_yxkvy")
-metadata/_custom_type_script = "uid://2x5aqyeudj7a"
-
-[node name="pumpkin" parent="movable_objects/ObjectAnchor7" unique_id=1222323557 instance=ExtResource("31_wwjag")]
-position = Vector2(170, 823)
+[node name="rose_potted" parent="movable_objects/ObjectAnchor6" unique_id=713786230 instance=ExtResource("31_joiyc")]
+position = Vector2(-634, 514)
 
 [node name="lights" type="Node2D" parent="." unique_id=1821536139]
 

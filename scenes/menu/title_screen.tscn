@@ -27,6 +27,7 @@
 [ext_resource type="PackedScene" uid="uid://ds4v3foycg1ug" path="res://scenes/entities/firefly.tscn" id="24_pddr3"]
 [ext_resource type="Texture2D" uid="uid://dyj0c421hwn0o" path="res://assets/sprites/misc/light_texture.png" id="25_0rory"]
 [ext_resource type="PackedScene" uid="uid://bdwwmuep6qohb" path="res://scenes/menu/level_select_screen.tscn" id="25_lo53v"]
+[ext_resource type="Texture2D" uid="uid://bkt3sbuowqcb0" path="res://assets/sprites/misc/title.png" id="27_fru7b"]
 
 [node name="title_screen" type="Control" unique_id=198211424]
 layout_mode = 3
@@ -270,7 +271,7 @@ texture = ExtResource("23_txacc")
 flip_h = true
 
 [node name="firefly" parent="objects" unique_id=1158227695 instance=ExtResource("24_pddr3")]
-position = Vector2(177, 296)
+position = Vector2(396, 349)
 
 [node name="firefly2" parent="objects" unique_id=120075723 instance=ExtResource("24_pddr3")]
 position = Vector2(891, 594)
@@ -286,7 +287,7 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -161.0
-offset_top = -35.0
+offset_top = 9.0
 offset_right = 162.0
 offset_bottom = 125.0
 grow_horizontal = 2
@@ -300,6 +301,7 @@ theme_override_font_sizes/font_size = 24
 text = "start"
 
 [node name="settings" type="Button" parent="menu" unique_id=1809044336]
+visible = false
 custom_minimum_size = Vector2(0, 48)
 layout_mode = 2
 theme_override_font_sizes/font_size = 24
@@ -320,14 +322,28 @@ layout_mode = 1
 visible = false
 layout_mode = 1
 
+[node name="title" type="TextureRect" parent="." unique_id=1634164365]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -308.0
+offset_top = 198.0
+offset_right = 308.0
+offset_bottom = 310.0
+grow_horizontal = 2
+scale = Vector2(1.35, 1.35)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+texture = ExtResource("27_fru7b")
+
 [node name="CanvasModulate" type="CanvasModulate" parent="." unique_id=803926346]
 color = Color(0.17470476, 0.18929103, 0.29099804, 1)
 
 [node name="PointLight2D" type="PointLight2D" parent="." unique_id=2093002188]
-position = Vector2(652, 420)
+position = Vector2(654, 507)
 energy = 0.55
 texture = ExtResource("25_0rory")
-texture_scale = 4.35
+texture_scale = 2.3
 
 [connection signal="pressed" from="menu/start" to="." method="start"]
 [connection signal="pressed" from="menu/settings" to="." method="settings"]

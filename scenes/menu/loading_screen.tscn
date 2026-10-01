@@ -40,6 +40,7 @@ _data = {
 }
 
 [node name="loading_screen" type="CanvasLayer" unique_id=272537498]
+layer = 2
 script = ExtResource("1_4je5t")
 
 [node name="loading" type="Label" parent="." unique_id=1100955531]
